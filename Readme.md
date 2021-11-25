@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Artem Akhmadeev](https://up.htmlacademy.ru/adaptive/24/user/108519).
-* Наставник: `Неизвестно`.
+* Наставник: [Арутюн Карапетян](https://htmlacademy.ru/profile/id1969291).
 
 ---
 
