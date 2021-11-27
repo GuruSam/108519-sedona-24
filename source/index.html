@@ -1,12 +1,154 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+    <header class="page-header">
 
+      <a class="page-header__logo">
+        <img src="img/logo.svg" width="102" height="84" alt="Логотип">
+      </a>
+
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Фото и Видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a>Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a>HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="page-header__intro">
+        <img src="img/text-index.svg" width="282" height="214" alt="Приветствие">
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="page-description">
+        <h1 class="page-description__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="page-description__sub-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </div>
+
+      <section class="features">
+        <h2 class="visually-hidden">Особенности Седоны</h2>
+
+        <div class="features__row">
+          <div class="features__item features__item--blue">
+            <h3 class="features__item-title">Настоящий городок</h3>
+            <span class="features__item-count">— №1 —</span>
+            <p class="features__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </div>
+
+          <div class="features__photo">
+            <img src="img/photo-city-1.png" width="320" height="260" alt="Фото города">
+          </div>
+        </div>
+
+        <div class="features__row">
+          <ul class="features__list">
+            <li class="features__item features__item--house">
+              <h3 class="features__item-title">Жилье</h3>
+              <p class="features__item-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+
+            <li class="features__item features__item--gift">
+              <h3 class="features__item-title">Сувениры</h3>
+              <p class="features__item-description">Не только китайского, но и местного производства!</p>
+            </li>
+
+            <li class="features__item features__item--burger">
+              <h3 class="features__item-title">Еда</h3>
+              <p class="features__item-description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="features__row">
+          <div class="features__item features__item--blue">
+            <h3 class="features__item-title">Там есть мост дьявола</h3>
+            <span class="features__item-count">— №2 —</span>
+            <p class="features__item-description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </div>
+
+          <div class="features__photo">
+            <img src="img/photo-bridge.png" width="320" height="260" alt="Мост дьявола">
+          </div>
+        </div>
+
+        <div class="features__row features__row--grey">
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="features__item-title">Небольшая площадь</h3>
+              <span class="features__item-count">— №3 —</span>
+              <p class="features__item-description">Все интересные места находятся очень близко</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-title">Красивая дорога</h3>
+              <span class="features__item-count">— №4 —</span>
+              <p class="features__item-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="features__item-title">Мало туристов</h3>
+              <span class="features__item-count">— №5 —</span>
+              <p class="features__item-description">Большинство едет в гранд каньон и толпится там</p>
+            </li>
+          </ul>
+
+      </section>
+
+      <section class="search-hotel">
+        <h2 class="search-hotel__title">Заинтересовались?</h2>
+        <p class="search-hotel__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="search-hotel__link" href="#">Найти гостиницу</a>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта</h2>
+        <span class="map__marker"></span>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#visitSEDONA</p>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="#">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
