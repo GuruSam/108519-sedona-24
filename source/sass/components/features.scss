@@ -1,0 +1,17 @@
+.features__row {
+  padding: 40px 20px;
+
+  &--grey {
+    background-color: #eeeeee;
+  }
+
+  &--blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+  }
+}
+
+.features__list {
+  list-style: none;
+  padding: 0;
+}

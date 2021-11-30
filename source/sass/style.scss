@@ -1,1 +1,8 @@
-// Начните писать стили здесь
+// Globals
+@import "global.scss";
+
+// Components
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/visually-hidden.scss";
+@import "./components/features.scss";
