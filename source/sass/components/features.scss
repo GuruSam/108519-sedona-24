@@ -1,9 +1,11 @@
 .features__row {
-  padding: 40px 20px;
-
   &--grey {
     background-color: #eeeeee;
   }
+}
+
+.features__item {
+  padding: 20px;
 
   &--blue {
     background-color: #81b3d2;
