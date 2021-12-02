@@ -8,49 +8,46 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-
-      <a class="page-header__logo">
-        <img src="img/logo.svg" width="102" height="84" alt="Логотип">
+      <a class="page-header__logo" href="#">
+        <img src="img/logo.svg" width="102" height="84" alt="Логотип.">
       </a>
 
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Фото и Видео</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>Форма отзыва</a>
-            </li>
-            <li class="main-nav__item">
-              <a>HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="catalog.html">Фото и Видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
-
-      <div class="page-header__intro">
-        <img src="img/sedona.svg" width="229" height="39" alt="Седона">
-      </div>
-
-      <div class="page-header__description">
-        <h1 class="page-header__title">Оставьте свой отзыв</h1>
-        <p class="page-header__sub-title">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
     </header>
 
     <main class="page-main">
-      <section class="form">
-        <form action="https://echo.htmlacademy.ru" method="post">
+      <section class="intro">
+        <img src="img/sedona.svg" width="229" height="39" alt="Седона.">
+      </section>
 
-          <div class="form__wrapper">
-            <h2 class="form__title">Представьтесь:</h2>
+      <section class="form">
+        <header class="form__header">
+          <h1 class="form__title">Оставьте свой отзыв</h1>
+          <p class="form__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </header>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-field">
+            <h2 class="form-field__title">Представьтесь:</h2>
 
             <div class="form-control">
               <label class="form-control__label" for="name">Имя*:</label>
@@ -68,8 +65,8 @@
             </div>
           </div>
 
-          <div class="form__wrapper">
-            <h2 class="form__title">Контактная информация:</h2>
+          <div class="form-field">
+            <h2 class="form-field__title">Контактная информация:</h2>
 
             <div class="form-control">
               <label class="form-control__label" for="phone">Контактный телефон*:</label>
@@ -82,8 +79,8 @@
             </div>
           </div>
 
-          <div class="form__wrapper">
-            <h2 class="form__title">Ваше общее впечатление:</h2>
+          <div class="form-field">
+            <h2 class="form-field__title">Ваше общее впечатление:</h2>
 
             <div class="form-control">
               <input class="form-control__input" id="positive" name="opinion" value="positive" type="radio">
@@ -101,8 +98,8 @@
             </div>
           </div>
 
-          <div class="form__wrapper">
-            <h2 class="form__title">Посещенные достопримечательности:</h2>
+          <div class="form-field">
+            <h2 class="form-field__title">Посещенные достопримечательности:</h2>
 
             <div class="form-control">
               <input class="form-control__input" id="bridge" name="bridge-visited" type="checkbox">
@@ -125,34 +122,35 @@
             </div>
           </div>
 
-          <div class="form__wrapper">
-            <h2 class="form__title">Опишите свои эмоции:</h2>
+          <div class="form-field">
+            <h2 class="form-field__title">Опишите свои эмоции:</h2>
 
             <textarea class="form__textarea" name="review" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
           </div>
 
           <button class="button form__submit-button">Отправить отзыв</button>
+          <small class="form__required">*-обязательные поля</small>
         </form>
       </section>
 
-      <div class="failure-popup visually-hidden">
-        <h2 class="failure-popup__title">Что-то пошло не так!</h2>
-        <p class="failure-popup__text">
+      <section class="popup popup--failure popup--hidden">
+        <h2 class="popup__title">Что-то пошло не так!</h2>
+        <p class="popup__text">
           Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
-        <button class="failure-popup__button button">Ок</button>
-      </div>
+        <button class="popup__button button">Ок</button>
+      </section>
 
-      <div class="success-popup visually-hidden">
-        <h2 class="success-popup__title">Ваш отзыв отправлен!</h2>
-        <p class="success-popup__text">
+      <section class="popup popup--success popup--hidden">
+        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">
           Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>
           В ближайшее время мы опубликуем его на сайте.
         </p>
-        <footer class="success-popup__footer">
-          <button class="success-popup__button button">Закрыть окно</button>
+        <footer class="popup__footer">
+          <button class="popup__button button">Закрыть окно</button>
         </footer>
-      </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -161,21 +159,27 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">Мы в Вконтакте</a>
+            <a class="social__link social__link--twitter button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy">
+              <span class="visually-hidden">Мы в Фейсбуке</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">Мы в Инстаграме</a>
+            <a class="social__link social__link--youtube button" href="https://www.instagram.com/htmlacademy">
+              <span class="visually-hidden">Мы в Инстаграме</span>
+            </a>
           </li>
         </ul>
       </div>
 
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="#">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy">
+        Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy.">
         </a>
       </div>
     </footer>
