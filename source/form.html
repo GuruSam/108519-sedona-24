@@ -51,32 +51,36 @@
 
             <div class="text-field">
               <label class="text-field__label" for="name">Имя*:</label>
-              <input class="text-field__input" id="name" name="name" type="text">
+              <input class="text-field__input" id="name" name="name" type="text" required>
             </div>
 
             <div class="text-field">
               <label class="text-field__label" for="surname">Фамилия*:</label>
-              <input class="text-field__input" id="surname" name="surname" type="text">
+              <input class="text-field__input" id="surname" name="surname" type="text" required>
             </div>
 
             <div class="text-field">
               <label class="text-field__label" for="middle-name">Отчество*:</label>
-              <input class="text-field__input" id="middle-name" name="middle_name" type="text">
+              <input class="text-field__input" id="middle-name" name="middle_name" type="text" required>
             </div>
           </fieldset>
 
           <fieldset class="form-group">
             <legend class="form-group__title">Контактная информация:</legend>
 
-            <div class="form-field">
-              <label class="form-field__label" for="phone">Контактный телефон*:</label>
-              <input class="form-field__input form-field__input--phone" id="phone" name="phone" type="tel" placeholder="Введите телефон">
-            </div>
+            <label class="text-field text-field--phone">
+              <span class="text-field__label">Контактный телефон*:</span>
+              <span class="text-field__input-holder">
+                <input class="text-field__input" type="tel" placeholder="Введите телефон" name="phone" required>
+              </span>
+            </label>
 
-            <div class="form-field">
-              <label class="form-field__label" for="email">Электронная почта*:</label>
-              <input class="form-field__input form-field__input--email" id="email" name="email" type="email" placeholder="Введите e-mail">
-            </div>
+            <label class="text-field text-field--email">
+              <span class="text-field__label">Электронная почта*:</span>
+              <span class="text-field__input-holder">
+                <input class="text-field__input" type="email" placeholder="Введите e-mail" name="email" required>
+              </span>
+            </label>
           </fieldset>
 
           <fieldset class="form-group">

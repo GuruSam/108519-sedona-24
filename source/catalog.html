@@ -132,16 +132,22 @@
         <div class="video__player player">
           <video src="#" poster="./img/video-mobile.jpg"></video>
           <div class="player__controls">
-            <button class="player__replay" type="button">Воспроизвести</button>
+            <button class="player__control player__control--replay" type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
 
             <div class="player__progress">
-              <progress value="0" min="0">
-                <span class="player__progress-bar"></span>
-              </progress>
+              <button class="player__progress-button" type="button">
+                <span class="visually-hidden">Ползунок</span>
+              </button>
             </div>
 
-            <button class="player__caption" type="button">Субтитры</button>
-            <button class="player__fullscreen" type="button">Полный экран</button>
+            <button class="player__control player__control--caption" type="button">
+              <span class="visually-hidden">Субтитры</span>
+            </button>
+            <button class="player__control player__control--fullscreen" type="button">
+              <span class="visually-hidden">Полный экран</span>
+            </button>
           </div>
         </div>
       </section>
