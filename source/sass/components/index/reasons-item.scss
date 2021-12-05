@@ -4,11 +4,11 @@
 }
 
 .reasons-item--main {
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $blue-color;
+  color: $white-color;
 
   .reasons-item__title {
-    color: #ffffff;
+    color: $white-color;
   }
 
   .reasons-item__text-container {
@@ -24,7 +24,7 @@
 }
 
 .reasons-item--submain {
-  background-color: #eeeeee;
+  background-color: $grey-color;
   padding: 0 20px;
 
   .reasons-item__text-container {
@@ -32,7 +32,7 @@
   }
 
   &:not(:last-child) .reasons-item__text-container {
-    border-bottom: 1px solid #d6d6d6;
+    border-bottom: 1px solid $darker-grey-color;
   }
 }
 

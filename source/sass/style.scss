@@ -3,17 +3,17 @@
 @import "./globals/fonts.scss";
 @import "./globals/global.scss";
 
-// Components
-@import "./components/page-header.scss";
-@import "./components/main-nav.scss";
-@import "./components/intro.scss";
-@import "./components/reasons.scss";
-@import "./components/reasons-item.scss";
-@import "./components/features.scss";
-@import "./components/search-hotel.scss";
-@import "./components/page-footer.scss";
-@import "./components/social.scss";
-@import "./components/copyright.scss";
-@import "./components/button.scss";
-@import "./components/visually-hidden.scss";
+// Main page components
+@import "./components/index/page-header.scss";
+@import "./components/index/main-nav.scss";
+@import "./components/index/intro.scss";
+@import "./components/index/reasons.scss";
+@import "./components/index/reasons-item.scss";
+@import "./components/index/features.scss";
+@import "./components/index/search-hotel.scss";
+@import "./components/index/page-footer.scss";
+@import "./components/index/social.scss";
+@import "./components/index/copyright.scss";
+@import "./components/index/button.scss";
+@import "./components/index/visually-hidden.scss";
 

@@ -1,6 +1,6 @@
 .main-nav {
   height: 56px;
-  background-color: #ffffff;
+  background-color: $white-color;
 }
 
 .main-nav__list {
@@ -18,16 +18,16 @@
   justify-content: center;
   width: 100%;
   height: 55px;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: $blue-color;
+  color: $white-color;
   font-size: 18px;
   line-height: 40px;
   box-shadow:
-    inset 0 -1px rgba($color: #010101, $alpha: 0.2),
-    inset 0 1px rgba($color: #ffffff, $alpha: 0.2);
+    inset 0 -1px rgba($color: $dark-color, $alpha: 0.2),
+    inset 0 1px rgba($color: $white-color, $alpha: 0.2);
 
   a {
-    color: #ffffff;
+    color: $white-color;
     text-decoration: none;
     font-weight: bold;
   }
