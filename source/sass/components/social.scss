@@ -1,5 +1,34 @@
+.social {
+  width: 151px;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-facebook.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background-image: url("../../img/icon-youtube.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
