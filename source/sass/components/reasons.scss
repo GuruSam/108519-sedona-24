@@ -1,0 +1,16 @@
+.reasons__header {
+  padding: 32px 25px 11px;
+  line-height: 26px;
+}
+
+.reasons__title {
+  color: $header-text-color;
+  margin-bottom: 30px;
+}
+
+.reasons__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: reason;
+}

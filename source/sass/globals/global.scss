@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $default-text-color;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  color: $header-text-color;
+}
+
+p {
+  margin: 0;
+}

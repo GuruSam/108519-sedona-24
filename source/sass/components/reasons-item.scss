@@ -1,0 +1,49 @@
+.reasons-item {
+  line-height: 21px;
+  counter-increment: reason;
+}
+
+.reasons-item--main {
+  background-color: #81b3d2;
+  color: #ffffff;
+
+  .reasons-item__title {
+    color: #ffffff;
+  }
+
+  .reasons-item__text-container {
+    padding: 39px 0 35px;
+  }
+
+  &:first-child {
+    background-image: url("../../img/intro-triangle-white.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 33px;
+  }
+}
+
+.reasons-item--submain {
+  background-color: #eeeeee;
+  padding: 0 20px;
+
+  .reasons-item__text-container {
+    padding: 26px 12px;
+  }
+
+  &:not(:last-child) .reasons-item__text-container {
+    border-bottom: 1px solid #d6d6d6;
+  }
+}
+
+.reasons-item__image-container {
+  line-height: 0;
+}
+
+.reasons-item__description {
+  &::before {
+    display: flow-root;
+    content: "— №" counter(reason) " —";
+    margin: 14px 0;
+  }
+}

@@ -1,19 +1,19 @@
-.features__row {
-  &--grey {
-    background-color: #eeeeee;
-  }
+.features {
+  margin: 0;
+  list-style: none;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 22px 18px;
 }
 
 .features__item {
-  padding: 20px;
-
-  &--blue {
-    background-color: #81b3d2;
-    color: #ffffff;
-  }
+  margin-bottom: 30px;
 }
 
-.features__list {
-  list-style: none;
-  padding: 0;
+.features__title {
+  color: $header-text-color;
+}
+
+.features__description {
+  color: $default-text-color;
 }

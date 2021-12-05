@@ -1,8 +1,18 @@
 // Globals
-@import "global.scss";
+@import "./globals/variables.scss";
+@import "./globals/fonts.scss";
+@import "./globals/global.scss";
 
 // Components
 @import "./components/page-header.scss";
 @import "./components/main-nav.scss";
-@import "./components/visually-hidden.scss";
+@import "./components/intro.scss";
+@import "./components/reasons.scss";
+@import "./components/reasons-item.scss";
 @import "./components/features.scss";
+@import "./components/search-hotel.scss";
+@import "./components/page-footer.scss";
+@import "./components/social.scss";
+@import "./components/copyright.scss";
+@import "./components/visually-hidden.scss";
+

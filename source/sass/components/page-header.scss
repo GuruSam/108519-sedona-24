@@ -1,15 +1,17 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__logo {
   position: absolute;
+  left: 0;
+  right: 0;
+  width: 102px;
+  margin: 0 auto;
 }
 
-.page-header__intro {
-  height: 389px;
-  background: url("../../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-}
-
-.page-header__sub-title {
-  line-height: 26px;
-  color: #333333;
+.page-header__nav-toggle {
+  position: absolute;
+  right: 0;
 }
 

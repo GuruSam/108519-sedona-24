@@ -1,0 +1,9 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/intro-triangle.png"), url("../../img/back-mobile.jpg");
+  background-position: center bottom, center top;
+  background-repeat: no-repeat;
+  height: 389px;
+}
