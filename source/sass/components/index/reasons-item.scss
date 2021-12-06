@@ -4,7 +4,6 @@
 }
 
 .reasons-item--main {
-  background-color: $blue-color;
   color: $white-color;
 
   .reasons-item__title {
@@ -12,14 +11,15 @@
   }
 
   .reasons-item__text-container {
+    background-color: $blue-color;
     padding: 39px 20px 35px;
   }
 
-  &:first-child {
+  &:first-child .reasons-item__text-container {
     background-image: url("../../img/intro-triangle-white.png");
     background-position: center top;
     background-repeat: no-repeat;
-    padding-top: 33px;
+    padding-top: 70px;
   }
 }
 

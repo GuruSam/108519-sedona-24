@@ -4,14 +4,17 @@ body {
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   color: $default-text-color;
+  overflow: auto;
 }
 
 h1,
 h2,
-h3 {
+h3,
+legend {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;

@@ -4,6 +4,7 @@
 @import "./globals/global.scss";
 
 // Main page components
+@import "./components/index/page.scss";
 @import "./components/index/page-header.scss";
 @import "./components/index/main-nav.scss";
 @import "./components/index/intro.scss";
@@ -16,4 +17,9 @@
 @import "./components/index/copyright.scss";
 @import "./components/index/button.scss";
 @import "./components/index/visually-hidden.scss";
+
+// Form components
+@import "./components/form/form-group.scss";
+@import "./components/form/form.scss";
+@import "./components/form/popup.scss";
 

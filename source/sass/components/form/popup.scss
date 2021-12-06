@@ -1,0 +1,25 @@
+.popup__container {
+  padding: 35px 20px;
+}
+
+.popup__text {
+  margin-bottom: 20px;
+}
+
+.popup__button {
+  min-width: 180px;
+  max-width: 458px;
+}
+
+.popup__title {
+  margin-bottom: 30px;
+}
+
+.popup__footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+
+  .popup__button {
+    width: 100%;
+  }
+}

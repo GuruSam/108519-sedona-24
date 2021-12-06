@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона: оставить отзыв</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <header class="page-header">
@@ -47,7 +48,9 @@
 
         <form action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form-group">
-            <legend class="form-group__title">Представьтесь:</legend>
+            <div class="form-group__title">
+              <legend>Представьтесь:</legend>
+            </div>
 
             <div class="text-field">
               <label class="text-field__label" for="name">Имя*:</label>
@@ -66,7 +69,9 @@
           </fieldset>
 
           <fieldset class="form-group">
-            <legend class="form-group__title">Контактная информация:</legend>
+            <div class="form-group__title">
+              <legend>Контактная информация:</legend>
+            </div>
 
             <label class="text-field text-field--phone">
               <span class="text-field__label">Контактный телефон*:</span>
@@ -84,7 +89,9 @@
           </fieldset>
 
           <fieldset class="form-group">
-            <legend class="form-group__title">Ваше общее впечатление:</legend>
+            <div class="form-group__title">
+              <legend>Ваше общее впечатление:</legend>
+            </div>
 
             <div class="radio-button">
               <input class="radio-button__input" id="positive" name="opinion" value="positive" type="radio">
@@ -103,7 +110,9 @@
           </fieldset>
 
           <fieldset class="form-group">
-            <legend class="form-group__title">Посещенные достопримечательности:</legend>
+            <div class="form-group__title">
+              <legend>Посещенные достопримечательности:</legend>
+            </div>
 
             <div class="checkbox">
               <input class="checkbox__input" id="bridge" name="bridge-visited" type="checkbox">
@@ -127,30 +136,38 @@
           </fieldset>
 
           <fieldset class="form-group">
-            <legend class="form-group__title">Опишите свои эмоции:</legend>
+            <div class="form-group__title">
+              <legend>Опишите свои эмоции:</legend>
+            </div>
 
             <textarea class="form__textarea" name="review" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
           </fieldset>
 
-          <button class="button form__submit-button" type="submit">Отправить отзыв</button>
+          <div class="form__submit-wrapper">
+            <button class="button form__submit-button" type="submit">Отправить отзыв</button>
+          </div>
           <small class="form__required">*-обязательные поля</small>
         </form>
       </section>
 
       <section class="popup popup--failure popup--hidden">
-        <h2 class="popup__title">Что-то пошло не так!</h2>
-        <p class="popup__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-        <button class="popup__button button" type="button">Ок</button>
+        <div class="popup__container">
+          <h2 class="popup__title">Что-то пошло не так!</h2>
+          <p class="popup__text">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+          <button class="popup__button button" type="button">Ок</button>
+        </div>
       </section>
 
       <section class="popup popup--success popup--hidden">
-        <h2 class="popup__title">Ваш отзыв отправлен!</h2>
-        <p class="popup__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>
-          В ближайшее время мы опубликуем его на сайте.
-        </p>
+        <div class="popup__container">
+          <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+          <p class="popup__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>
+            В ближайшее время мы опубликуем его на сайте.
+          </p>
+        </div>
         <footer class="popup__footer">
           <button class="popup__button button" type="button">Закрыть окно</button>
         </footer>
