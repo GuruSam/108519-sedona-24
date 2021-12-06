@@ -2,20 +2,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   color: $color-primary;
-  overflow: auto;
 }
 
 h1,
 h2,
 h3,
 legend {
-  font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
