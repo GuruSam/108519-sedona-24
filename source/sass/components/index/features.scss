@@ -1,7 +1,7 @@
 .features {
   margin: 0;
   list-style: none;
-  background-color: $white-color;
+  background-color: $color-white;
   text-align: left;
   padding: 22px 20px;
 }
@@ -11,9 +11,9 @@
 }
 
 .features__title {
-  color: $header-text-color;
+  color: $color-black;
 }
 
 .features__description {
-  color: $default-text-color;
+  color: $color-primary;
 }

@@ -4,14 +4,14 @@
 }
 
 .reasons-item--main {
-  color: $white-color;
+  color: $color-white;
 
   .reasons-item__title {
-    color: $white-color;
+    color: $color-white;
   }
 
   .reasons-item__text-container {
-    background-color: $blue-color;
+    background-color: $color-blue;
     padding: 39px 20px 35px;
   }
 
@@ -24,7 +24,7 @@
 }
 
 .reasons-item--submain {
-  background-color: $grey-color;
+  background-color: $color-grey;
   padding: 0 20px;
 
   .reasons-item__text-container {
@@ -32,7 +32,7 @@
   }
 
   &:not(:last-child) .reasons-item__text-container {
-    border-bottom: 1px solid $darker-grey-color;
+    border-bottom: 1px solid $color-grey-darker;
   }
 }
 

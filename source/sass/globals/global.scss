@@ -7,7 +7,7 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  color: $default-text-color;
+  color: $color-primary;
   overflow: auto;
 }
 
@@ -19,7 +19,7 @@ legend {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
-  color: $header-text-color;
+  color: $color-black;
 }
 
 p {
