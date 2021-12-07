@@ -1,16 +1,20 @@
 .page-header {
+  display: flex;
+  justify-content: flex-end;
   position: relative;
+  height: 56px;
+  background-color: $color-white;
 }
 
 .page-header__logo {
   position: absolute;
-  left: 0;
+  left: calc(50% - 51px);
   right: 0;
   width: 102px;
-  margin: 0 auto;
 }
 
 .page-header__nav-toggle {
-  position: absolute;
-  right: 0;
+  margin-right: 20px;
+  height: 22px;
+  align-self: center;
 }

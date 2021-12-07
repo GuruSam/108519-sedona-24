@@ -1,4 +1,12 @@
 // Colors
+:root {
+  --color-theme-primary: #81b3d2;
+}
+
+html[data-theme="red"] {
+  --color-theme-primary: #d28181;
+}
+
 $color-black: #000000;
 $color-black-lighter: #010101;
 $color-primary: #333333;
@@ -9,3 +17,4 @@ $color-border-grey: #e5e5e5;
 
 $color-white: #ffffff;
 $color-blue: #81b3d2;
+$color-red: #d28181;
