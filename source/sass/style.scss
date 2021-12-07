@@ -3,32 +3,26 @@
 @import "./globals/fonts.scss";
 @import "./globals/global.scss";
 
-// Components
-@import "./components/page.scss";
-@import "./components/page-header.scss";
-@import "./components/main-nav.scss";
-@import "./components/intro.scss";
-@import "./components/page-footer.scss";
-@import "./components/social.scss";
-@import "./components/copyright.scss";
-@import "./components/button.scss";
-@import "./components/visually-hidden.scss";
-
-// Main page components
-@import "./components/index/reasons.scss";
-@import "./components/index/reasons-item.scss";
-@import "./components/index/features.scss";
-@import "./components/index/search-hotel.scss";
-
-// Form components
-@import "./components/form/form-group.scss";
-@import "./components/form/form.scss";
-@import "./components/form/popup.scss";
-@import "./components/form/radio-button.scss";
-@import "./components/form/checkbox.scss";
-
-// Catalog components
-@import "./components/catalog/gallery.scss";
-@import "./components/catalog/gallery-card.scss";
-@import "./components/catalog/like.scss";
-@import "./components/catalog/video.scss";
+// Blocks
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/button.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/reasons.scss";
+@import "./blocks/reasons-item.scss";
+@import "./blocks/features.scss";
+@import "./blocks/search-hotel.scss";
+@import "./blocks/form-group.scss";
+@import "./blocks/form.scss";
+@import "./blocks/popup.scss";
+@import "./blocks/radio-button.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/gallery-card.scss";
+@import "./blocks/like.scss";
+@import "./blocks/video.scss";
