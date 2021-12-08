@@ -1,0 +1,19 @@
+.features {
+  margin: 0;
+  list-style: none;
+  background-color: $color-white;
+  text-align: left;
+  padding: 22px 20px;
+}
+
+.features__item {
+  margin-bottom: 30px;
+}
+
+.features__title {
+  color: $color-black;
+}
+
+.features__description {
+  color: $color-primary;
+}

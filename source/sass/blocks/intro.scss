@@ -1,0 +1,18 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../img/intro-triangle.png"), url("../../img/back-desktop.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-color: #d28181;
+
+  &--main {
+    background-size: auto, cover;
+    min-height: 389px;
+  }
+
+  &--simple {
+    min-height: 160px;
+  }
+}

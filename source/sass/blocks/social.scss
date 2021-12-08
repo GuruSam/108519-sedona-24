@@ -1,0 +1,31 @@
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--twitter {
+    background-image: url("../../img/icon-twitter.png");
+  }
+
+  &--facebook {
+    background-image: url("../../img/icon-facebook.png");
+  }
+
+  &--youtube {
+    background-image: url("../../img/icon-youtube.png");
+  }
+}
