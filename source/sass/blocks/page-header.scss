@@ -11,10 +11,17 @@
   left: calc(50% - 51px);
   right: 0;
   width: 102px;
+  z-index: 1;
 }
 
 .page-header__nav-toggle {
   margin-right: 20px;
   height: 22px;
   align-self: center;
+}
+
+@media (min-width: 768px) {
+  .page-header__nav-toggle.button {
+    display: none;
+  }
 }

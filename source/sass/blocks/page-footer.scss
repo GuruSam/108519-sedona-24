@@ -17,3 +17,16 @@
 .page-footer__social {
   margin: 33px auto 0;
 }
+
+@media (min-width: 768px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .page-footer__social,
+  .page-footer__copyright {
+    margin: 0;
+  }
+}
