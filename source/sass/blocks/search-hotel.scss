@@ -15,3 +15,9 @@
   width: 100%;
   max-width: 458px;
 }
+
+@media (min-width: 768px) {
+  .search-hotel__title {
+    font-size: 30px;
+  }
+}

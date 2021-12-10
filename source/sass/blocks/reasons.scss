@@ -19,3 +19,18 @@
 .reasons__description {
   margin: 0;
 }
+
+@media (min-width: 768px) {
+  .reasons__header {
+    padding: 50px 20px;
+  }
+
+  .reasons__title {
+    font-size: 21px;
+  }
+
+  .reasons__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

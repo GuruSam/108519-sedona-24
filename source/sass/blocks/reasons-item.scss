@@ -11,7 +11,7 @@
 
   .reasons-item__text-container {
     background-color: $color-blue;
-    padding: 39px 20px 35px;
+    padding: 40px 20px;
   }
 
   &:first-child .reasons-item__text-container {
@@ -41,6 +41,10 @@
 
 .reasons-item__image-container {
   line-height: 0;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .reasons-item__title {
@@ -61,4 +65,37 @@
 .reasons-item__description {
   line-height: 21px;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .reasons-item {
+    min-height: 260px;
+  }
+
+  .reasons-item--main:first-child .reasons-item__text-container {
+    background-image: none;
+    padding-top: 40px;
+  }
+
+  .reasons-item--submain:not(:last-child) .reasons-item__text-container {
+    border: none;
+  }
+
+  .reasons-item--main:nth-child(2) {
+    direction: rtl;
+  }
+
+  .reasons-item--main {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: inherit;
+  }
+
+  .reasons-item__title {
+    font-size: 21px;
+  }
+
+  .reasons-item__image-container {
+    grid-column: 2 / -1;
+  }
 }

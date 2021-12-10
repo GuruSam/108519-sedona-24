@@ -4,6 +4,7 @@
   background-color: $color-white;
   text-align: left;
   padding: 22px 20px;
+  min-height: 320px;
 }
 
 .features__item {
@@ -12,8 +13,38 @@
 
 .features__title {
   color: $color-black;
+  font-size: 18px;
 }
 
 .features__description {
   color: $color-primary;
+}
+
+@media (min-width: 768px) {
+  .features {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 0;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+
+  .features__title {
+    font-size: 21px;
+  }
+
+  .features__item {
+    padding: 35px 50px;
+    margin: 0;
+  }
+
+  .features__item--gift {
+    padding: 35px 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features__item--gift {
+    padding: 35px 50px;
+  }
 }
