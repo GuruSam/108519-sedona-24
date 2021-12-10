@@ -9,3 +9,9 @@
 .video__player {
   margin-top: 30px;
 }
+
+@media (min-width: 768px) {
+  .video__title {
+    font-size: 30px;
+  }
+}

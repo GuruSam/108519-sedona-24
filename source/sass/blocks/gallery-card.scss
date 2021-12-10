@@ -1,11 +1,5 @@
 .gallery-card {
-  padding: 20px;
   text-align: left;
-  border-top: 1px solid $color-border-grey;
-
-  &:last-child {
-    border-bottom: 1px solid $color-border-grey;
-  }
 }
 
 .gallery-card__title {
@@ -21,4 +15,24 @@
 
 .gallery-card__author {
   text-transform: none;
+}
+
+.gallery-card__image {
+  display: block;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .gallery-card {
+    background-color: $color-grey-background;
+  }
+
+  .gallery-card__info {
+    padding: 15px 20px;
+  }
+
+  .gallery-card__image {
+    margin: 0;
+  }
 }
