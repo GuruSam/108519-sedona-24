@@ -42,3 +42,9 @@
     display: block;
   }
 }
+
+@media (min-width: 1200px) {
+  .form {
+    padding: 0 120px;
+  }
+}
