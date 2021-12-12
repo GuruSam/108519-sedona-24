@@ -11,17 +11,31 @@
   left: calc(50% - 51px);
   right: 0;
   width: 102px;
-  z-index: 1;
 }
 
 .page-header__nav-toggle {
   margin-right: 20px;
   height: 22px;
+  width: 23px;
+  padding: 0;
   align-self: center;
+  z-index: 1;
+  cursor: pointer;
+  background: url("../../img/icon-menu.svg");
+  background-color: $color-white;
+
+  &--close {
+    background: url("../../img/icon-cross.svg");
+    background-color: $color-blue;
+  }
 }
 
 @media (min-width: 768px) {
   .page-header__nav-toggle.button {
     display: none;
+  }
+
+  .page-header__logo {
+    z-index: 1;
   }
 }

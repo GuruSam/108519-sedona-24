@@ -4,6 +4,7 @@
 @import "./globals/global.scss";
 
 // Blocks
+@import "./blocks/button.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
@@ -11,7 +12,6 @@
 @import "./blocks/page-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/copyright.scss";
-@import "./blocks/button.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/reasons.scss";
 @import "./blocks/reasons-item.scss";

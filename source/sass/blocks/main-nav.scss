@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -33,6 +33,10 @@
 }
 
 @media (min-width: 768px) {
+  .main-nav {
+    display: block;
+  }
+
   .main-nav__list {
     display: flex;
     flex-wrap: nowrap;
@@ -54,5 +58,15 @@
       text-decoration: none;
       font-weight: 700;
     }
+  }
+
+  .main-nav__item--active a {
+    color: $color-active-nav;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav--closed {
+    display: none;
   }
 }
