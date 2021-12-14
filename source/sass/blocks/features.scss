@@ -9,15 +9,44 @@
 
 .features__item {
   margin-bottom: 30px;
+
+  &--house::before {
+    background: url("../../img/icon-house.svg");
+    background-repeat: no-repeat;
+    margin-top: -10px;
+  }
+
+  &--gift::before {
+    background: url("../../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    margin-top: -15px;
+  }
+
+  &--burger::before {
+    background: url("../../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    margin-top: -10px;
+  }
+
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background-position: center;
+    background-size: contain;
+  }
 }
 
 .features__title {
   color: $color-black;
   font-size: 18px;
+  margin-left: 50px;
 }
 
 .features__description {
   color: $color-primary;
+  margin-left: 50px;
 }
 
 @media (min-width: 768px) {
@@ -31,6 +60,7 @@
 
   .features__title {
     font-size: 21px;
+    margin: 25px 0;
   }
 
   .features__item {
@@ -38,8 +68,24 @@
     margin: 0;
   }
 
+  .features__item::before {
+    position: static;
+    display: block;
+    margin: 25px auto 0;
+    width: 76px;
+    height: 76px;
+  }
+
+  .features__item--burger {
+    order: 2;
+  }
+
   .features__item--gift {
     padding: 35px 10px;
+  }
+
+  .features__description {
+    margin-left: 0;
   }
 }
 

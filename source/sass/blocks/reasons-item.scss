@@ -23,6 +23,9 @@
 }
 
 .reasons-item--submain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: $color-grey;
   padding: 0 20px;
 
@@ -37,6 +40,12 @@
   &:not(:last-child) .reasons-item__text-container {
     border-bottom: 1px solid $color-grey-darker;
   }
+}
+
+.reasons-item__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .reasons-item__image-container {
@@ -55,10 +64,11 @@
   &::after {
     display: flow-root;
     content: "— №" counter(reason) " —";
-    margin: 14px 0;
+    margin: 20px 0;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+    word-spacing: normal;
   }
 }
 
@@ -72,23 +82,28 @@
     min-height: 260px;
   }
 
+  .reasons-item--main {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: inherit;
+  }
+
   .reasons-item--main:first-child .reasons-item__text-container {
     background-image: none;
     padding-top: 40px;
+  }
+
+  .reasons-item--main:nth-child(2) .reasons-item__image-container {
+    grid-column: 1 / 3;
+    order: -1;
   }
 
   .reasons-item--submain:not(:last-child) .reasons-item__text-container {
     border: none;
   }
 
-  .reasons-item--main:nth-child(2) {
-    direction: rtl;
-  }
-
-  .reasons-item--main {
-    display: grid;
-    grid-column: 1 / -1;
-    grid-template-columns: inherit;
+  .reasons-item--submain .reasons-item__title {
+    word-spacing: 260px;
   }
 
   .reasons-item__title {

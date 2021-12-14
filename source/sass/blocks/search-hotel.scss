@@ -1,5 +1,5 @@
 .search-hotel {
-  padding: 33px 20px 33px;
+  padding: 33px 20px 0;
 }
 
 .search-hotel__title {
@@ -8,16 +8,35 @@
 }
 
 .search-hotel__info {
-  margin-bottom: 27px;
+  margin: 28px 0;
 }
 
 .search-hotel__link {
   width: 100%;
   max-width: 458px;
+  margin-bottom: 50px;
+}
+
+.search-hotel__map {
+  border: 0;
+
+  // Игнор внутренних отступов родителя
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  height: 350px;
 }
 
 @media (min-width: 768px) {
   .search-hotel__title {
     font-size: 30px;
+    margin: 25px 0;
+  }
+
+  .search-hotel__info {
+    margin: 38px 0;
+  }
+
+  .search-hotel__link {
+    margin-bottom: 60px;
   }
 }
