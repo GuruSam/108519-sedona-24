@@ -4,8 +4,9 @@
 }
 
 .reasons__title {
+  margin: 0;
+  margin-bottom: 30px;
   font-size: 18px;
-  margin: 0 0 30px 0;
   color: $color-black;
 }
 
@@ -22,6 +23,8 @@
 
 @media (min-width: 768px) {
   .reasons__header {
+    width: 520px;
+    margin: 0 auto;
     padding: 50px 20px;
   }
 

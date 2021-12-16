@@ -1,12 +1,12 @@
 .page-header {
-  display: flex;
-  justify-content: flex-end;
   position: relative;
+  display: flex;
   height: 56px;
   background-color: $color-white;
 }
 
 .page-header__logo {
+  display: block;
   position: absolute;
   left: calc(50% - 51px);
   right: 0;
@@ -14,18 +14,18 @@
 }
 
 .page-header__nav-toggle {
-  margin-right: 20px;
+  z-index: 1;
+  margin: 17px 20px 17px auto;
   height: 22px;
   width: 23px;
   padding: 0;
   align-self: center;
-  z-index: 1;
-  cursor: pointer;
-  background: url("../../img/icon-menu.svg");
+  background: url("../img/icon-menu.svg");
   background-color: $color-white;
+  cursor: pointer;
 
   &--close {
-    background: url("../../img/icon-cross.svg");
+    background: url("../img/icon-cross.svg");
     background-color: $color-blue;
   }
 }
