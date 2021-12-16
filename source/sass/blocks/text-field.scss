@@ -1,0 +1,17 @@
+.text-field {
+  margin-bottom: 20px;
+}
+
+.text-field__label {
+  margin-right: 10px;
+}
+
+.text-field__input {
+  height: 58px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  background-color: $color-grey-background;
+  border: none;
+}

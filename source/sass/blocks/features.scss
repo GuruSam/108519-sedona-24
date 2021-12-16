@@ -1,45 +1,89 @@
 .features {
+  min-height: 320px;
   margin: 0;
+  padding: 22px 20px;
+  text-align: left;
   list-style: none;
   background-color: $color-white;
-  text-align: left;
-  padding: 22px 20px;
-  min-height: 320px;
 }
 
 .features__item {
   margin-bottom: 30px;
+
+  &--house::before {
+    margin-top: -10px;
+    background: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--gift::before {
+    margin-top: -15px;
+    background: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--burger::before {
+    margin-top: -10px;
+    background: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    content: "";
+    background-position: center;
+    background-size: contain;
+  }
 }
 
 .features__title {
-  color: $color-black;
+  margin-left: 50px;
   font-size: 18px;
+  color: $color-black;
 }
 
 .features__description {
+  margin-left: 50px;
   color: $color-primary;
 }
 
 @media (min-width: 768px) {
   .features {
-    grid-column: 1 / -1;
-    text-align: center;
-    padding: 0;
     display: grid;
+    grid-column: 1 / -1;
     grid-template-columns: inherit;
+    padding: 0;
+    text-align: center;
   }
 
   .features__title {
+    margin: 0;
+    margin-bottom: 25px;
     font-size: 21px;
   }
 
   .features__item {
-    padding: 35px 50px;
     margin: 0;
+    padding: 35px 50px;
+
+    &::before {
+      position: static;
+      display: block;
+      margin: 25px auto;
+      width: 76px;
+      height: 76px;
+    }
+
+    &--gift {
+      padding: 35px 10px;
+      order: 3;
+    }
   }
 
-  .features__item--gift {
-    padding: 35px 10px;
+  .features__description {
+    margin-left: 0;
   }
 }
 

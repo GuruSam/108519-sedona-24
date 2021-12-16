@@ -1,9 +1,9 @@
 .social__list {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
 }
 
 .social__item:not(:last-child) {
@@ -18,14 +18,14 @@
   background-position: center;
 
   &--twitter {
-    background-image: url("../../img/icon-twitter.png");
+    background-image: url("../img/icon-twitter.png");
   }
 
   &--facebook {
-    background-image: url("../../img/icon-facebook.png");
+    background-image: url("../img/icon-facebook.png");
   }
 
   &--youtube {
-    background-image: url("../../img/icon-youtube.png");
+    background-image: url("../img/icon-youtube.png");
   }
 }

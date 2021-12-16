@@ -18,15 +18,22 @@
   margin: 33px auto 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .page-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 38px 60px;
   }
 
   .page-footer__social,
   .page-footer__copyright {
     margin: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer {
+    padding: 38px 120px;
   }
 }
