@@ -1,3 +1,24 @@
+.like {
+  cursor: pointer;
+}
+
 .like__counts {
   font-weight: 700;
+}
+
+.like__button {
+  float: left;
+  width: 23px;
+  height: 21px;
+  margin-right: 10px;
+  background: url("../img/like-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+@media (min-width: 1200px) {
+  .like__button {
+    background: url("../img/like-icon-white.svg");
+  }
 }

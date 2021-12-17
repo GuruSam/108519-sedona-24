@@ -20,7 +20,16 @@
 .gallery-card__image {
   display: block;
   margin-bottom: 10px;
-  line-height: 0;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.gallery-card__likes {
+  margin-top: 5px;
+  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -29,10 +38,40 @@
   }
 
   .gallery-card__info {
+    position: relative;
     padding: 15px 20px;
   }
 
   .gallery-card__image {
     margin: 0;
+  }
+
+  .gallery-card__likes {
+    position: absolute;
+    bottom: 26px;
+    right: 0;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery-card {
+    position: relative;
+  }
+
+  .gallery-card__info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: $color-white;
+    background-color: rgba($color: $color-black, $alpha: 0.3);
+  }
+
+  .gallery-card__title a {
+    color: $color-white;
+  }
+
+  .gallery-card__likes {
+    color: $color-white;
   }
 }
