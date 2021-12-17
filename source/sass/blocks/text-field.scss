@@ -1,5 +1,47 @@
 .text-field {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &--phone,
+  &--email {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .text-field__input-holder::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 58px;
+      height: 58px;
+      content: "";
+      background-color: $color-grey-input;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .text-field__label {
+      margin: 0;
+      margin-bottom: 8px;
+      margin-left: 22px;
+    }
+
+    .text-field__input:focus {
+      padding-right: 58px;
+    }
+  }
+
+  &--phone .text-field__input-holder::after {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email .text-field__input-holder::after {
+    background-image: url("../img/mail.svg");
+  }
 }
 
 .text-field__label {
@@ -7,6 +49,7 @@
 }
 
 .text-field__input {
+  width: 100%;
   height: 58px;
   padding: 0 20px;
   font-size: 18px;
@@ -14,4 +57,51 @@
   font-weight: 700;
   background-color: $color-grey-background;
   border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $color-border-grey;
+  }
+
+  &:focus {
+    padding: 0 16px;
+    background-color: $color-white;
+    border: 4px solid $color-border-grey;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $color-black;
+  }
+}
+
+.text-field__input-holder {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .text-field.text-field--phone {
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-field {
+    &--phone,
+    &--email {
+      flex-direction: row;
+      align-items: center;
+
+      .text-field__label {
+        margin-left: 0;
+        margin-right: 10px;
+        text-align: left;
+      }
+    }
+  }
+
+  .text-field.text-field--phone {
+    margin-bottom: 0;
+  }
 }

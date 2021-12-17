@@ -1,3 +1,43 @@
+.checkbox:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.checkbox__input {
+  display: none;
+
+  &:checked + .checkbox__label::before {
+    background: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $color-grey-background;
+  }
+
+  &:checked:active + .checkbox__label::before {
+    background-color: #d5d5d5;
+  }
+}
+
 .checkbox__label {
+  display: flex;
+  align-items: center;
   text-transform: none;
+  font-size: 18px;
+  font-weight: 700;
+
+  &::before {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin-right: 24px;
+    content: "";
+    background-color: $color-grey-background;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      background-color: $color-border-grey;
+    }
+  }
 }

@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 28px 20px;
+  padding: 38px 20px 22px;
 }
 
 .page-footer__hashtag {
@@ -15,7 +15,7 @@
 }
 
 .page-footer__social {
-  margin: 33px auto 0;
+  margin: 35px auto 0;
 }
 
 @media (min-width: 600px) {
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 38px 60px;
+    padding: 36px 60px;
   }
 
   .page-footer__social,
@@ -34,6 +34,6 @@
 
 @media (min-width: 1200px) {
   .page-footer {
-    padding: 38px 120px;
+    padding: 36px 120px;
   }
 }

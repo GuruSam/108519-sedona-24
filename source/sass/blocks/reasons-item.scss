@@ -15,7 +15,7 @@
   }
 
   &:first-child .reasons-item__text-container {
-    padding-top: 70px;
+    padding-top: 65px;
     background-image: url("../img/intro-triangle-white.png");
     background-position: center top;
     background-repeat: no-repeat;
@@ -46,6 +46,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-height: 256px;
 }
 
 .reasons-item__image-container {
@@ -79,8 +80,6 @@
 
 @media (min-width: 768px) {
   .reasons-item {
-    min-height: 260px;
-
     &--main {
       display: grid;
       grid-column: 1 / -1;

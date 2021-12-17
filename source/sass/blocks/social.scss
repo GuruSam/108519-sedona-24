@@ -14,18 +14,30 @@
   display: block;
   width: 46px;
   height: 48px;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding: 0;
 
-  &--twitter {
+  &::before {
+    display: block;
+    width: inherit;
+    height: inherit;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--twitter::before {
     background-image: url("../img/icon-twitter.png");
   }
 
-  &--facebook {
+  &--facebook::before {
     background-image: url("../img/icon-facebook.png");
   }
 
-  &--youtube {
+  &--youtube::before {
     background-image: url("../img/icon-youtube.png");
+  }
+
+  &:active::before {
+    opacity: 0.3;
   }
 }

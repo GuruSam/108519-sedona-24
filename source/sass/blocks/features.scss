@@ -1,14 +1,16 @@
 .features {
   min-height: 320px;
   margin: 0;
-  padding: 22px 20px;
+  padding: 35px 20px;
   text-align: left;
   list-style: none;
   background-color: $color-white;
 }
 
 .features__item {
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
 
   &--house::before {
     margin-top: -10px;
@@ -17,13 +19,13 @@
   }
 
   &--gift::before {
-    margin-top: -15px;
+    margin-top: -13px;
     background: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
   }
 
   &--burger::before {
-    margin-top: -10px;
+    margin-top: -9px;
     background: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
   }
@@ -39,13 +41,18 @@
 }
 
 .features__title {
+  margin: 0;
   margin-left: 50px;
+  margin-bottom: 18px;
   font-size: 18px;
+  line-height: 26px;
   color: $color-black;
 }
 
 .features__description {
+  margin: 0;
   margin-left: 50px;
+  line-height: 21px;
   color: $color-primary;
 }
 
@@ -65,13 +72,16 @@
   }
 
   .features__item {
-    margin: 0;
-    padding: 35px 50px;
+    padding: 35px 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
 
     &::before {
       position: static;
       display: block;
-      margin: 25px auto;
+      margin: 0 auto 25px;
       width: 76px;
       height: 76px;
     }
@@ -83,7 +93,8 @@
   }
 
   .features__description {
-    margin-left: 0;
+    margin: 0;
+    margin-bottom: 15px;
   }
 }
 
