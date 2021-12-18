@@ -10,6 +10,9 @@
   }
 
   .reasons-item__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 40px 20px;
     background-color: $color-blue;
   }
@@ -23,9 +26,6 @@
 }
 
 .reasons-item--submain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 0 20px;
   background-color: $color-grey;
 
@@ -40,13 +40,6 @@
   &:not(:last-child) .reasons-item__text-container {
     border-bottom: 1px solid $color-grey-darker;
   }
-}
-
-.reasons-item__text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 256px;
 }
 
 .reasons-item__image-container {
@@ -101,14 +94,24 @@
     }
 
     &--submain {
+      padding: 0;
+
       .reasons-item__title {
         word-spacing: 260px;
+      }
+
+      .reasons-item__text-container {
+        padding: 50px 30px;
       }
 
       &:not(:last-child) .reasons-item__text-container {
         border: none;
       }
     }
+  }
+
+  .reasons-item__text-container {
+    min-height: 256px;
   }
 
   .reasons-item__title {
@@ -126,8 +129,8 @@
       padding: 40px 60px;
     }
 
-    &--submain {
-      padding: 0 30px;
+    &--submain .reasons-item__text-container {
+      padding: 50px;
     }
   }
 }

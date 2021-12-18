@@ -1,5 +1,4 @@
 .features {
-  min-height: 320px;
   margin: 0;
   padding: 35px 20px;
   text-align: left;
@@ -72,7 +71,7 @@
   }
 
   .features__item {
-    padding: 35px 20px;
+    padding: 55px 25px;
 
     &:not(:last-child) {
       margin-bottom: 0;
@@ -87,19 +86,19 @@
     }
 
     &--gift {
-      padding: 35px 10px;
       order: 3;
     }
   }
 
   .features__description {
     margin: 0;
-    margin-bottom: 15px;
   }
 }
 
 @media (min-width: 1200px) {
-  .features__item--gift {
-    padding: 35px 50px;
+  .features__item {
+    width: 300px;
+    padding: 65px 0;
+    margin: 0 auto;
   }
 }
