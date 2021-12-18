@@ -6,6 +6,7 @@
 .video__title {
   margin: 0;
   margin-bottom: 25px;
+  color: $color-black;
 }
 
 .video__text {
@@ -25,10 +26,13 @@
   }
 
   .video__title {
+    margin-bottom: 35px;
     font-size: 30px;
   }
 
   .video__text {
+    width: 500px;
+    margin: 0 auto 70px;
     margin-bottom: 70px;
   }
 }
