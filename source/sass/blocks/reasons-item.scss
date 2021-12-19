@@ -4,6 +4,7 @@
 
 .reasons-item--main {
   color: $color-white;
+  background-color: $color-blue;
 
   .reasons-item__title {
     color: $color-white;
@@ -46,6 +47,7 @@
   img {
     display: block;
     max-width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -120,6 +122,12 @@
 
   .reasons-item__image-container {
     grid-column: 2 / -1;
+
+    img {
+      width: 512px;
+      height: 256px;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -131,6 +139,12 @@
 
     &--submain .reasons-item__text-container {
       padding: 50px;
+    }
+  }
+
+  .reasons-item__image-container {
+    img {
+      width: 100%;
     }
   }
 }

@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона: оставить отзыв</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="#">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип.">
+          </picture>
         </a>
 
         <button class="page-header__nav-toggle button" type="button">
@@ -40,7 +49,10 @@
         <h1 class="visually-hidden">Форма отзыва</h1>
 
         <section class="intro intro--simple">
-          <img src="img/sedona.svg" width="229" height="39" alt="Седона.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/intro-simple-desktop.svg">
+            <img src="img/intro-simple-mobile.svg" width="229" height="39" alt="Седона.">
+          </picture>
         </section>
 
         <section class="form">

@@ -42,9 +42,13 @@
   }
 
   .form__header {
-    width: 435px;
-    margin: 50px auto;
+    margin: 50px 0;
     padding: 10px;
+  }
+
+  .form__description {
+    max-width: 450px;
+    margin: 0 auto;
   }
 
   .form__title {

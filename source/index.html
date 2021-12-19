@@ -4,13 +4,22 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="#">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип.">
+          </picture>
         </a>
 
         <button class="page-header__nav-toggle button" type="button">
@@ -39,7 +48,10 @@
         <h1 class="visually-hidden">Седона - общая информация</h1>
 
         <section class="intro intro--main">
-          <img src="img/text-index.svg" width="282" height="214" alt="Приветствие.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/intro-text-desktop.svg">
+            <img src="img/intro-text-mobile.svg" width="282" height="214" alt="Приветствие.">
+          </picture>
         </section>
 
         <section class="reasons">
@@ -56,7 +68,11 @@
               </div>
 
               <div class="reasons-item__image-container">
-                <img src="img/photo-city-1.png" width="320" height="260" alt="Фото города.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/sedona/photo-city-desktop.jpg 1x, img/sedona/photo-city-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/sedona/photo-city-tablet.jpg 1x, img/sedona/photo-city-tablet@2x.jpg 2x">
+                  <img src="img/sedona/photo-city.jpg" width="320" height="260" alt="Фото города.">
+                </picture>
               </div>
 
               <ul class="features">
@@ -84,7 +100,11 @@
               </div>
 
               <div class="reasons-item__image-container">
-                <img src="img/photo-bridge.png" width="320" height="260" alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/sedona/photo-bridge-desktop.jpg 1x, img/sedona/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/sedona/photo-bridge-tablet.jpg 1x, img/sedona/photo-bridge-tablet@2x.jpg 2x">
+                  <img src="img/sedona/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
+                </picture>
               </div>
             </li>
 

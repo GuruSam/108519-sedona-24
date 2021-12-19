@@ -2,29 +2,50 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../img/intro-triangle.png"), url("../img/back-desktop.jpg");
+  background-image: url("../img/intro-triangle.svg"), url("../img/bg-mobile-2.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-color: $color-background-default;
+  background-size: auto, cover;
 
   &--main {
     min-height: 390px;
-    background-size: auto, cover;
   }
 
   &--simple {
     min-height: 160px;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/bg-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: 768px) {
   .intro {
+    background-image: url("../img/intro-triangle.svg"), url("../img/bg-desktop.jpg");
+
     &--main {
       min-height: 518px;
+
+      img {
+        width: 461px;
+        height: 350px;
+      }
     }
 
     &--simple {
       min-height: 290px;
+      background-size: auto;
+
+      img {
+        width: 457px;
+        height: 78px;
+      }
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-triangle.svg"), url("../img/bg-desktop@2x.jpg");
     }
   }
 }

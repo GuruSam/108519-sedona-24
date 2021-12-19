@@ -6,11 +6,24 @@
 }
 
 .page-header__logo {
-  display: block;
   position: absolute;
   left: calc(50% - 51px);
   right: 0;
+  display: block;
   width: 102px;
+
+  @media (min-width: 768px) {
+    z-index: 1;
+  }
+
+  @media (min-width: 1200px) {
+    left: calc(50% - 93px);
+
+    img {
+      width: 187px;
+      height: 97px;
+    }
+  }
 }
 
 .page-header__nav-toggle {
@@ -33,9 +46,5 @@
 @media (min-width: 768px) {
   .page-header__nav-toggle.button {
     display: none;
-  }
-
-  .page-header__logo {
-    z-index: 1;
   }
 }

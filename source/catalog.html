@@ -5,13 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Седона: фото и видео</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page-body">
     <div class="page__wrapper">
       <header class="page-header">
         <a class="page-header__logo" href="#">
-          <img src="img/logo.svg" width="102" height="84" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" width="102" height="84" alt="Логотип.">
+          </picture>
         </a>
 
         <button class="page-header__nav-toggle button" type="button">
@@ -40,7 +49,10 @@
         <h1 class="visually-hidden">Седона - галерея</h1>
 
         <section class="intro intro--simple">
-          <img src="img/sedona.svg" width="229" height="39" alt="Седона.">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/intro-simple-desktop.svg">
+            <img src="img/intro-simple-mobile.svg" width="229" height="39" alt="Седона.">
+          </picture>
         </section>
 
         <section class="gallery">
@@ -52,7 +64,11 @@
           <div class="gallery__list">
             <article class="gallery__item gallery-card">
               <a class="gallery-card__image" href="#">
-                <img src="img/gallery/photo-1.jpg" alt="Неродные просторы.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/gallery/photo-1-desktop.jpg 1x, img/gallery/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/photo-1-tablet.jpg 1x, img/gallery/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/gallery/photo-1-mobile.jpg" srcset="img/gallery/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы.">
+                </picture>
               </a>
 
               <div class="gallery-card__info">
@@ -73,7 +89,11 @@
 
             <article class="gallery__item gallery-card">
               <a class="gallery-card__image" href="#">
-                <img src="img/gallery/photo-2.jpg" alt="Местная растительность.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/gallery/photo-2-desktop.jpg 1x, img/gallery/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/photo-2-tablet.jpg 1x, img/gallery/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/gallery/photo-2-mobile.jpg" srcset="img/gallery/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность.">
+                </picture>
               </a>
 
               <div class="gallery-card__info">
@@ -94,7 +114,11 @@
 
             <article class="gallery__item gallery-card">
               <a class="gallery-card__image" href="#">
-                <img src="img/gallery/photo-3.jpg" alt="Дорога на север.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/gallery/photo-3-desktop.jpg 1x, img/gallery/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/photo-3-tablet.jpg 1x, img/gallery/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/gallery/photo-3-mobile.jpg" srcset="img/gallery/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север.">
+                </picture>
               </a>
 
               <div class="gallery-card__info">
@@ -115,7 +139,11 @@
 
             <article class="gallery__item gallery-card">
               <a class="gallery-card__image" href="#">
-                <img src="img/gallery/photo-4.jpg" alt="Мост дьявола.">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/gallery/photo-4-desktop.jpg 1x, img/gallery/photo-4-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/photo-4-tablet.jpg 1x, img/gallery/photo-4-tablet@2x.jpg 2x">
+                  <img src="img/gallery/photo-4-mobile.jpg" srcset="img/gallery/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                </picture>
               </a>
 
               <div class="gallery-card__info">
