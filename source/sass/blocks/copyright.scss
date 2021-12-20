@@ -1,8 +1,16 @@
 .copyright__link {
+  margin-left: 8px;
   line-height: 26px;
+
+  &:hover {
+    fill: $color-blue;
+  }
+
+  &:active {
+    fill: rgba($color: $color-black, $alpha: 0.3);
+  }
 }
 
-.copyright__link img {
-  margin-left: 8px;
+.copyright__link svg {
   vertical-align: middle;
 }

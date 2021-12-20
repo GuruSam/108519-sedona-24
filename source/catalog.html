@@ -82,13 +82,13 @@
                 </h3>
 
                 <span class="gallery-card__author">Автор фото: Сергей</span>
-              </div>
 
-              <div class="gallery-card__likes like">
-                <button class="like__button">
-                  <span class="visually-hidden">Лайкнуть фото</span>
-                </button>
-                <span class="like__counts">143</span>
+                <div class="gallery-card__likes like">
+                  <button class="like__button">
+                    <span class="visually-hidden">Лайкнуть фото</span>
+                  </button>
+                  <span class="like__counts">143</span>
+                </div>
               </div>
             </article>
 
@@ -103,13 +103,13 @@
                 </h3>
 
                 <span class="gallery-card__author">Автор фото: Петр</span>
-              </div>
 
-              <div class="gallery-card__likes like">
-                <button class="like__button">
-                  <span class="visually-hidden">Лайкнуть фото</span>
-                </button>
-                <span class="like__counts">96</span>
+                <div class="gallery-card__likes like">
+                  <button class="like__button">
+                    <span class="visually-hidden">Лайкнуть фото</span>
+                  </button>
+                  <span class="like__counts">96</span>
+                </div>
               </div>
             </article>
 
@@ -124,13 +124,13 @@
                 </h3>
 
                 <span class="gallery-card__author">Автор фото: Антон</span>
-              </div>
 
-              <div class="gallery-card__likes like">
-                <button class="like__button">
-                  <span class="visually-hidden">Лайкнуть фото</span>
-                </button>
-                <span class="like__counts">254</span>
+                <div class="gallery-card__likes like">
+                  <button class="like__button">
+                    <span class="visually-hidden">Лайкнуть фото</span>
+                  </button>
+                  <span class="like__counts">254</span>
+                </div>
               </div>
             </article>
           </div>
@@ -144,6 +144,9 @@
             <video src="#" poster="./img/video-mobile.jpg"></video>
             <div class="player__controls">
               <button class="player__control player__control--replay" type="button">
+                <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/replay.svg#icon">
+                </svg>
                 <span class="visually-hidden">Воспроизвести</span>
               </button>
 
@@ -156,9 +159,15 @@
               </div>
 
               <button class="player__control player__control--caption" type="button">
+                <svg width="32" height="20" viewBox="0 0 32 20" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/subtitles.svg#icon"></use>
+                </svg>
                 <span class="visually-hidden">Субтитры</span>
               </button>
               <button class="player__control player__control--fullscreen" type="button">
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/fullscreen.svg#icon"></use>
+                </svg>
                 <span class="visually-hidden">Полный экран</span>
               </button>
             </div>
@@ -192,7 +201,10 @@
         <div class="page-footer__copyright copyright">
           Разработано
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy.">
+            <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/htmlacademy.svg#icon" width="27" height="35">
+            </svg>
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </footer>

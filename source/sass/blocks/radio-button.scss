@@ -32,11 +32,11 @@
   font-weight: 700;
 
   &::before {
+    content: "";
     display: block;
     width: 56px;
     height: 56px;
     margin-right: 23px;
-    content: "";
     border-radius: 50%;
     background-color: $color-grey-background;
     cursor: pointer;
