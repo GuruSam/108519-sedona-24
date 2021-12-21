@@ -25,7 +25,9 @@
   }
 
   .form__header {
-    margin-bottom: 50px;
+    width: 435px;
+    margin: 50px auto;
+    padding: 10px;
   }
 
   .form__title {
@@ -35,11 +37,17 @@
   .form__container {
     display: grid;
     grid-template-columns: 50% 50%;
-    row-gap: 80px;
+    row-gap: 50px;
   }
 
   .form__required {
     display: block;
+    align-self: center;
+    justify-self: end;
+  }
+
+  .form__submit-wrapper {
+    padding: 0;
   }
 }
 

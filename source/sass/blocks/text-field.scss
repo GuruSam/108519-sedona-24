@@ -1,12 +1,74 @@
 .text-field {
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+
+  &--phone,
+  &--email {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .text-field__label {
+      margin: 0;
+      margin-bottom: 8px;
+      margin-left: 22px;
+    }
+
+    .text-field__input {
+      padding-right: 58px;
+    }
+  }
+
+  &--phone .text-field__input-holder::after {
+    background-image: url("../img/phone.svg");
+  }
+
+  &--email .text-field__input-holder::after {
+    background-image: url("../img/mail.svg");
+  }
+}
+
+.text-field__input-holder {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: $color-grey-input;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 1200px) {
+    width: 315px;
+  }
 }
 
 .text-field__label {
-  margin-right: 10px;
+  margin-right: 15px;
+
+  &--short {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    &--short {
+      display: block;
+    }
+
+    &--full {
+      display: none;
+    }
+  }
 }
 
 .text-field__input {
+  width: 100%;
   height: 58px;
   padding: 0 20px;
   font-size: 18px;
@@ -14,4 +76,37 @@
   font-weight: 700;
   background-color: $color-grey-background;
   border: none;
+  box-sizing: border-box;
+
+  &:hover {
+    background-color: $color-border-grey;
+  }
+
+  &:focus {
+    padding: 0 16px;
+    background-color: $color-white;
+    border: 4px solid $color-border-grey;
+    outline: none;
+  }
+
+  &::placeholder {
+    opacity: 1;
+    color: $color-black;
+  }
+}
+
+@media (min-width: 1200px) {
+  .text-field {
+    &--phone,
+    &--email {
+      flex-direction: row;
+      align-items: center;
+
+      .text-field__label {
+        margin-left: 0;
+        margin-right: 15px;
+        text-align: left;
+      }
+    }
+  }
 }
