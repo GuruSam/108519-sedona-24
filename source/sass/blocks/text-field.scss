@@ -2,27 +2,10 @@
   display: flex;
   align-items: center;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
   &--phone,
   &--email {
     flex-direction: column;
     align-items: flex-start;
-
-    .text-field__input-holder::after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: block;
-      width: 58px;
-      height: 58px;
-      content: "";
-      background-color: $color-grey-input;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
 
     .text-field__label {
       margin: 0;
@@ -30,7 +13,7 @@
       margin-left: 22px;
     }
 
-    .text-field__input:focus {
+    .text-field__input {
       padding-right: 58px;
     }
   }
@@ -44,8 +27,44 @@
   }
 }
 
+.text-field__input-holder {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: $color-grey-input;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: 1200px) {
+    width: 315px;
+  }
+}
+
 .text-field__label {
-  margin-right: 10px;
+  margin-right: 15px;
+
+  &--short {
+    display: none;
+  }
+
+  @media (min-width: 1200px) {
+    &--short {
+      display: block;
+    }
+
+    &--full {
+      display: none;
+    }
+  }
 }
 
 .text-field__input {
@@ -71,18 +90,8 @@
   }
 
   &::placeholder {
+    opacity: 1;
     color: $color-black;
-  }
-}
-
-.text-field__input-holder {
-  position: relative;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .text-field.text-field--phone {
-    margin-bottom: 25px;
   }
 }
 
@@ -95,13 +104,9 @@
 
       .text-field__label {
         margin-left: 0;
-        margin-right: 10px;
+        margin-right: 15px;
         text-align: left;
       }
     }
-  }
-
-  .text-field.text-field--phone {
-    margin-bottom: 0;
   }
 }

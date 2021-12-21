@@ -67,18 +67,18 @@
                 <legend>Представьтесь:</legend>
               </div>
 
-              <div class="text-field">
+              <div class="form-group__text-field text-field">
                 <label class="text-field__label" for="name">Имя*:</label>
                 <input class="text-field__input" id="name" name="name" type="text" required>
               </div>
 
-              <div class="text-field">
+              <div class="form-group__text-field text-field">
                 <label class="text-field__label" for="surname">Фамилия*:</label>
                 <input class="text-field__input" id="surname" name="surname" type="text" required>
               </div>
 
-              <div class="text-field">
-                <label class="text-field__label" for="middle-name">Отчество*:</label>
+              <div class="form-group__text-field text-field">
+                <label class="text-field__label" for="middle-name">Отчество:</label>
                 <input class="text-field__input" id="middle-name" name="middle_name" type="text" required>
               </div>
             </fieldset>
@@ -89,14 +89,15 @@
               </div>
 
               <div class="form-group__contacts-container">
-                <label class="text-field text-field--phone">
-                  <span class="text-field__label">Контактный телефон*:</span>
+                <label class="form-group__text-field text-field text-field--phone">
+                  <span class="text-field__label text-field__label--full">Контактный телефон*:</span>
+                  <span class="text-field__label text-field__label--short">Телефон*:</span>
                   <span class="text-field__input-holder">
                     <input class="text-field__input" type="tel" placeholder="Введите телефон" name="phone" required>
                   </span>
                 </label>
 
-                <label class="text-field text-field--email">
+                <label class="form-group__text-field text-field text-field--email">
                   <span class="text-field__label">Электронная почта*:</span>
                   <span class="text-field__input-holder">
                     <input class="text-field__input" type="email" placeholder="Введите e-mail" name="email" required>
@@ -111,7 +112,7 @@
               </div>
 
               <div class="radio-button">
-                <input class="radio-button__input" id="positive" name="opinion" value="positive" type="radio">
+                <input class="radio-button__input" id="positive" name="opinion" value="positive" type="radio" checked>
                 <label class="radio-button__label" for="positive">Скорее положительное</label>
               </div>
 
@@ -133,17 +134,17 @@
 
               <div class="form-group__checkbox-container">
                 <div class="form-group__checkbox checkbox">
-                  <input class="checkbox__input" id="bridge" name="bridge-visited" type="checkbox">
+                  <input class="checkbox__input" id="bridge" name="bridge-visited" type="checkbox" checked>
                   <label class="checkbox__label" for="bridge">Мост Дьявола</label>
                 </div>
 
                 <div class="form-group__checkbox checkbox">
-                  <input class="checkbox__input" id="mountain" name="mountain-visited" type="checkbox">
+                  <input class="checkbox__input" id="mountain" name="mountain-visited" type="checkbox" checked>
                   <label class="checkbox__label" for="mountain">Гора-Колокол</label>
                 </div>
 
                 <div class="form-group__checkbox checkbox">
-                  <input class="checkbox__input" id="slide-park" name="slide-park-visited" type="checkbox">
+                  <input class="checkbox__input" id="slide-park" name="slide-park-visited" type="checkbox" checked>
                   <label class="checkbox__label" for="slide-park">Слайд-парк</label>
                 </div>
 
@@ -154,18 +155,18 @@
               </div>
             </fieldset>
 
-            <fieldset class="form-group form-group--review">
+            <div class="form-group form-group--review">
               <div class="form-group__title form-group__title--bordered">
                 <legend>Опишите свои эмоции:</legend>
               </div>
 
-              <textarea class="form__textarea" name="review" placeholder="Опишите подробно все свои восторги" cols="30" rows="10"></textarea>
-            </fieldset>
+              <textarea class="form-group__textarea" name="review" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
 
             <div class="form__submit-wrapper">
               <button class="button form__submit-button" type="submit">Отправить отзыв</button>
             </div>
-            <span class="form__required">*-обязательные поля</span>
+            <span class="form__required">* — обязательные поля</span>
           </form>
         </section>
 
@@ -219,7 +220,10 @@
         <div class="page-footer__copyright copyright">
           Разработано
           <a class="copyright__link" href="https://htmlacademy.ru">
-            <img src="img/htmlacademy.svg" width="27" height="34" alt="Разработано HTML Academy.">
+            <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/htmlacademy.svg#icon" width="27" height="35">
+            </svg>
+            <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </footer>

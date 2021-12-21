@@ -5,8 +5,7 @@
   background-image: url("../img/intro-triangle.svg"), url("../img/bg-mobile-2.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-color: $color-background-default;
-  background-size: auto, cover;
+  background-color: $color-grey;
 
   &--main {
     min-height: 390px;

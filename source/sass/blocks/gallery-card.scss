@@ -33,7 +33,6 @@
 
 .gallery-card__likes {
   margin-top: 5px;
-  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
@@ -43,7 +42,8 @@
   }
 
   .gallery-card__info {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 80px;
     padding: 15px 20px;
   }
 
@@ -52,10 +52,10 @@
   }
 
   .gallery-card__likes {
-    position: absolute;
-    bottom: 26px;
-    right: 0;
-    margin-top: 0;
+    grid-column: 2 / -1;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
   }
 }
 
