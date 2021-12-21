@@ -1,6 +1,11 @@
 .popup {
+  display: none;
   margin: 20px 0;
   box-shadow: 0 7px 15px rgba($color: #000101, $alpha: 0.15);
+
+  &--active {
+    display: block;
+  }
 }
 
 .popup__container {
@@ -22,8 +27,8 @@
 }
 
 .popup__footer {
-  background-color: $color-grey-background;
   padding: 20px;
+  background-color: $color-grey-background;
 
   .popup__button {
     width: 100%;

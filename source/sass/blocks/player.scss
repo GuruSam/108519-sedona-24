@@ -78,6 +78,14 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color: $color-white, $alpha: 0.6);
+  }
+
+  &:active {
+    background-color: rgba($color: $color-white, $alpha: 0.3);
+  }
 }
 
 @media (min-width: 768px) {

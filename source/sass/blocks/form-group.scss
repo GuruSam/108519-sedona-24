@@ -54,6 +54,10 @@
   .form-group__text-field {
     &:not(:last-child) {
       margin-bottom: 15px;
+
+      @media (min-width: 1200px) {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -61,6 +65,10 @@
 .form-group__checkbox {
   &:not(:last-child) {
     margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -125,6 +133,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 53px;
+    row-gap: 24px;
   }
 
   .form-group__checkbox {
@@ -145,6 +154,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 
     .form-group__text-field:not(:last-child) {
       margin-bottom: 0;
@@ -152,6 +162,6 @@
   }
 
   .form-group__checkbox-container {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
