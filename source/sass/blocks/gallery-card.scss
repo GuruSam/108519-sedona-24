@@ -23,11 +23,14 @@
 .gallery-card__image {
   display: block;
   margin-bottom: 10px;
+  height: 280px;
 
   img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 

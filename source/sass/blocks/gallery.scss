@@ -40,8 +40,22 @@
     padding: 0;
     border: none;
 
+    a {
+      height: 267px;
+    }
+
+    &:first-child {
+      a {
+        height: 400px;
+      }
+    }
+
     &:last-child {
       border: none;
+    }
+
+    &:nth-child(2n+3) {
+      background-color: #e2e2e2;
     }
   }
 
