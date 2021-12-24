@@ -17,6 +17,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-triangle.svg"), url("../img/bg-mobile@2x.jpg");
+    background-size: auto, 901px;
   }
 }
 
@@ -45,6 +46,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"), url("../img/bg-desktop@2x.jpg");
+      background-size: auto, 1200px;
     }
   }
 }

@@ -1,3 +1,7 @@
+.gallery {
+  text-align: center;
+}
+
 .gallery__header {
   padding: 30px 20px;
 }
@@ -50,6 +54,11 @@
       }
     }
 
+    &:first-of-type {
+      width: 100%;
+      grid-column: 1 / -1;
+    }
+
     &:last-child {
       border: none;
     }
@@ -57,11 +66,6 @@
     &:nth-child(2n+3) {
       background-color: #e2e2e2;
     }
-  }
-
-  .gallery__item:first-of-type {
-    width: 100%;
-    grid-column: 1 / -1;
   }
 
   .gallery__title {
