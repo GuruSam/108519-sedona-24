@@ -3,19 +3,8 @@
 }
 
 .radio-button__input {
-  display: none;
-
   &:checked + .radio-button__label::after {
-    position: absolute;
-    top: calc(50% - 10px);
-    left: 18px;
-    display: block;
-    width: 20px;
-    height: 20px;
-    content: "";
-    border-radius: 50%;
-    background-color: $color-primary;
-    cursor: pointer;
+    opacity: 1;
   }
 
   &:checked:active + .radio-button__label::after {
@@ -39,7 +28,19 @@
     margin-right: 23px;
     border-radius: 50%;
     background-color: $color-grey-background;
-    cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 18px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    opacity: 0;
   }
 
   &:hover {

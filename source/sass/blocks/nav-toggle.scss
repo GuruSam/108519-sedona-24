@@ -2,13 +2,13 @@
   height: 22px;
   width: 23px;
   padding: 0;
-  background: url("../img/icon-menu.svg");
+  background-image: url("../img/sprite.svg#icon-menu");
   background-color: $color-white;
   border: none;
   cursor: pointer;
 
   &--close {
-    background: url("../img/icon-cross.svg");
+    background-image: url("../img/icon-cross.svg");
     background-color: $color-blue;
   }
 

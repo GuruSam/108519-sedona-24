@@ -11,24 +11,6 @@
     margin-bottom: 24px;
   }
 
-  &--house::before {
-    margin-top: -10px;
-    background: url("../img/icon-house.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--gift::before {
-    margin-top: -13px;
-    background: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-  }
-
-  &--burger::before {
-    margin-top: -9px;
-    background: url("../img/icon-burger.svg");
-    background-repeat: no-repeat;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -36,6 +18,22 @@
     height: 40px;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--house::before {
+    margin-top: -10px;
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--gift::before {
+    margin-top: -13px;
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--burger::before {
+    margin-top: -9px;
+    background-image: url("../img/icon-burger.svg");
   }
 }
 

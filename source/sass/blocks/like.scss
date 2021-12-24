@@ -1,5 +1,5 @@
 .like {
-  cursor: pointer;
+  display: flex;
 }
 
 .like__counts {
@@ -7,19 +7,27 @@
 }
 
 .like__button {
-  float: left;
   width: 23px;
   height: 21px;
   margin-right: 10px;
-  background: url("../img/like-icon.svg");
+  padding: 0;
+  background-image: url("../img/like-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: transparent;
   border: none;
-  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: 1200px) {
   .like__button {
-    background: url("../img/like-icon-white.svg");
+    background-image: url("../img/like-icon-white.svg");
   }
 }
