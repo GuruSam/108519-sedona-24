@@ -1,0 +1,18 @@
+.nav-toggle {
+  height: 22px;
+  width: 23px;
+  padding: 0;
+  background: url("../img/icon-menu.svg");
+  background-color: $color-white;
+  border: none;
+  cursor: pointer;
+
+  &--close {
+    background: url("../img/icon-cross.svg");
+    background-color: $color-blue;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

@@ -34,12 +34,11 @@
 
 @media (min-width: 768px) {
   .main-nav {
-    display: block;
+    position: static;
   }
 
   .main-nav__list {
     display: flex;
-    flex-wrap: nowrap;
     background-color: $color-white;
   }
 
@@ -47,25 +46,26 @@
     width: 20%;
     font-size: 14px;
 
-    &:nth-child(2) {
+    &:nth-child(2),
+    &:nth-child(6) {
       margin-right: 20%;
     }
-  }
 
-  .main-nav__item a {
-    color: $color-black;
-  }
+    a {
+      color: $color-black;
 
-  .main-nav__item a:hover {
-    color: $color-blue;
-  }
+      &:hover {
+        color: $color-blue;
+      }
 
-  .main-nav__item a:active {
-    color: rgba($color: $color-black, $alpha: 0.3);
-  }
+      &:active {
+        color: rgba($color: $color-black, $alpha: 0.3);
+      }
+    }
 
-  .main-nav__item--active a {
-    color: $color-active-nav;
+    a[aria-current] {
+      color: $color-active-nav;
+    }
   }
 }
 
