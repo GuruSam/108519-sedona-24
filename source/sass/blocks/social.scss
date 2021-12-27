@@ -24,18 +24,19 @@
     height: inherit;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 19px;
   }
 
   &--twitter::before {
-    background-image: url("../img/icon-twitter.png");
+    background-image: url("../img/sprite.svg#icon-twitter");
   }
 
   &--facebook::before {
-    background-image: url("../img/icon-facebook.png");
+    background-image: url("../img/sprite.svg#icon-facebook");
   }
 
   &--youtube::before {
-    background-image: url("../img/icon-youtube.png");
+    background-image: url("../img/sprite.svg#icon-youtube");
   }
 
   &:active::before {
