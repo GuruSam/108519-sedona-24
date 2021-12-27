@@ -19,11 +19,13 @@
   }
 
   &--phone .text-field__input-holder::after {
-    background-image: url("../img/phone.svg");
+    background-image: url("../img/sprite.svg#phone");
+    background-size: 18px;
   }
 
   &--email .text-field__input-holder::after {
-    background-image: url("../img/mail.svg");
+    background-image: url("../img/sprite.svg#mail");
+    background-size: 16px;
   }
 }
 

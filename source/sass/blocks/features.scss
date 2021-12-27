@@ -23,17 +23,17 @@
 
   &--house::before {
     margin-top: -10px;
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/sprite.svg#icon-house");
   }
 
   &--gift::before {
     margin-top: -13px;
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/sprite.svg#icon-gift");
   }
 
   &--burger::before {
     margin-top: -9px;
-    background-image: url("../img/icon-burger.svg");
+    background-image: url("../img/sprite.svg#icon-burger");
   }
 }
 

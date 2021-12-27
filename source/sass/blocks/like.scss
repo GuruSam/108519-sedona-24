@@ -11,7 +11,7 @@
   height: 21px;
   margin-right: 10px;
   padding: 0;
-  background-image: url("../img/like-icon.svg");
+  background-image: url("../img/sprite.svg#like-icon");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
@@ -28,6 +28,6 @@
 
 @media (min-width: 1200px) {
   .like__button {
-    background-image: url("../img/like-icon-white.svg");
+    background-image: url("../img/sprite.svg#like-icon-white");
   }
 }
