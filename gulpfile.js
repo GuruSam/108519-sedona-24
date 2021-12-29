@@ -10,6 +10,8 @@ import svgSprite from 'gulp-svg-sprite';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-minify';
 
 // Styles
 
@@ -43,6 +45,11 @@ const copySource = () => {
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(terser({
+      ext: {
+        min: '.min.js'
+      }
+    }))
     .pipe(gulp.dest('build/js'));
 }
 
@@ -50,6 +57,7 @@ const scripts = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
