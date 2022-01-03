@@ -18,11 +18,13 @@
     background-color: $color-blue;
   }
 
-  &:first-child .reasons-item__text-container {
-    padding-top: 65px;
-    background-image: url("../img/intro-triangle-white.svg");
-    background-position: center top;
-    background-repeat: no-repeat;
+  &:first-child {
+    .reasons-item__text-container {
+      padding-top: 75px;
+      background-image: url("../img/intro-triangle-white.svg");
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
   }
 }
 

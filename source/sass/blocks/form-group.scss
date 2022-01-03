@@ -32,6 +32,7 @@
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
+  line-height: 26px;
   color: $color-black;
   background-color: $color-grey-background;
   border: none;
@@ -122,9 +123,9 @@
       }
 
       legend {
-        max-width: 310px;
-        margin-left: 60px;
-        margin-right: 60px;
+        width: 400px;
+        padding-left: 60px;
+        padding-right: 60px;
       }
     }
   }
@@ -138,7 +139,7 @@
   }
 
   .form-group__checkbox {
-    width: 200px;
+    min-width: 200px;
   }
 }
 

@@ -3,13 +3,13 @@
 }
 
 .reasons__header {
-  padding: 30px 20px 11px;
+  padding: 30px 25px 11px;
   line-height: 26px;
 }
 
 .reasons__title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 18px;
   color: $color-black;
 }
@@ -23,6 +23,10 @@
 
 .reasons__description {
   margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) {

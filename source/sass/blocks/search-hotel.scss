@@ -10,10 +10,15 @@
   margin: 0;
   margin-bottom: 25px;
   font-size: 21px;
+  line-height: 26px;
 }
 
 .search-hotel__info {
   margin: 0;
+
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
 }
 
 .search-hotel__link {
