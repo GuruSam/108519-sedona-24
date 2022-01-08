@@ -8,13 +8,17 @@
 
 .gallery__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   font-size: 18px;
   line-height: 26px;
 }
 
 .gallery__description {
   margin: 0;
+
+  br {
+    display: none;
+  }
 }
 
 .gallery__item {
@@ -33,7 +37,7 @@
   .gallery__header {
     width: 458px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 57px 0 80px;
   }
 
   .gallery__list {
@@ -71,14 +75,23 @@
   }
 
   .gallery__title {
+    margin-bottom: 32px;
     font-size: 30px;
     line-height: 30px;
+  }
+
+  .gallery__description br {
+    display: block;
   }
 }
 
 @media (min-width: 1200px) {
   .gallery {
     padding: 0;
+  }
+
+  .gallery__header {
+    padding: 100px 0 80px;
   }
 
   .gallery__list {

@@ -8,11 +8,19 @@
   background-color: $color-grey;
 
   &--main {
-    min-height: 390px;
+    min-height: 389px;
+
+    picture {
+      height: 214px;
+    }
   }
 
   &--simple {
     min-height: 160px;
+
+    picture {
+      margin-top: -10px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
@@ -28,7 +36,8 @@
     &--main {
       min-height: 518px;
 
-      img {
+      img,
+      picture {
         width: 461px;
         height: 350px;
       }
@@ -47,6 +56,14 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"), url("../img/bg-desktop@2x.jpg");
       background-size: auto, 1200px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    &--simple {
+      min-height: 300px;
     }
   }
 }

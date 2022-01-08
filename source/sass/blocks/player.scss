@@ -89,6 +89,11 @@
 }
 
 @media (min-width: 768px) {
+  .player video {
+    height: 500px;
+    object-fit: cover;
+  }
+
   .player__controls {
     bottom: 0;
     margin: 0;

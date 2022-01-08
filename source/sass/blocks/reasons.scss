@@ -3,13 +3,13 @@
 }
 
 .reasons__header {
-  padding: 30px 25px 11px;
+  padding: 33px 25px 11px;
   line-height: 26px;
 }
 
 .reasons__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 18px;
   color: $color-black;
 }
@@ -33,7 +33,7 @@
   .reasons__header {
     width: 520px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 45px 0 53px;
   }
 
   .reasons__title {
@@ -43,5 +43,11 @@
   .reasons__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .reasons__header {
+    padding: 55px 0 43px;
   }
 }

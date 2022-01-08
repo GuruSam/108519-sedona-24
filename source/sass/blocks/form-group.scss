@@ -16,6 +16,23 @@
   &--review {
     grid-column: 1 / -1;
   }
+
+  &--contacts,
+  &--review {
+    .form-group__title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--opinion {
+    .form-group__title {
+      margin-bottom: 23px;
+    }
+  }
+
+  &--sights {
+    padding: 16px 20px 25px;
+  }
 }
 
 .form-group__title {
@@ -28,7 +45,7 @@
 .form-group__textarea {
   width: 100%;
   min-height: 160px;
-  padding: 13px 23px;
+  padding: 13px 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -83,11 +100,37 @@
       .form-group__title {
         margin-bottom: 20px;
       }
+
+      .form-group__text-field {
+        &:not(:last-child) {
+          margin-bottom: 23px;
+        }
+      }
     }
 
     &--sights {
+      margin-bottom: 20px;
+
       .form-group__title {
         margin-bottom: 45px;
+      }
+    }
+
+    &--opinion {
+      .form-group__title {
+        margin-bottom: 58px;
+      }
+    }
+
+    &--personal {
+      .form-group__title {
+        margin-bottom: 57px;
+      }
+    }
+
+    &--review {
+      .form-group__title {
+        margin-bottom: 55px;
       }
     }
 
@@ -97,8 +140,8 @@
 
     &:first-child {
       border-left: 1px solid $color-border-grey;
-      padding-left: 60px;
-      margin-bottom: 30px;
+      padding-left: 55px;
+      margin-bottom: 22px;
     }
   }
 
@@ -134,12 +177,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 53px;
-    row-gap: 24px;
+    column-gap: 60px;
+    row-gap: 31px;
   }
 
   .form-group__checkbox {
     min-width: 200px;
+  }
+
+  .form-group__textarea {
+    padding: 17px 20px;
   }
 }
 
@@ -147,8 +194,27 @@
   .form-group {
     &--contacts {
       .form-group__title {
-        margin-bottom: 60px;
+        margin-bottom: 77px;
       }
+    }
+
+    &--opinion {
+      padding-right: 47px;
+
+      .form-group__title {
+        text-align: center;
+      }
+    }
+
+    &--sights {
+      .form-group__title {
+        margin-bottom: 39px;
+      }
+    }
+
+    &:first-child {
+      padding-left: 78px;
+      margin-bottom: 18px;
     }
   }
 
@@ -165,5 +231,6 @@
 
   .form-group__checkbox-container {
     justify-content: flex-start;
+    column-gap: 53px;
   }
 }

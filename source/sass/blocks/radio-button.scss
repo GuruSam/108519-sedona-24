@@ -25,7 +25,7 @@
     display: block;
     width: 56px;
     height: 56px;
-    margin-right: 23px;
+    margin-right: 22px;
     border-radius: 50%;
     background-color: $color-grey-background;
   }
@@ -58,6 +58,12 @@
 
 @media (min-width: 768px) {
   .radio-button:not(:last-child) {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
+  }
+
+  .radio-button__label {
+    &::before {
+      margin-right: 20px;
+    }
   }
 }

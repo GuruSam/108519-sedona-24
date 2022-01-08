@@ -1,12 +1,12 @@
 .video {
-  margin-bottom: 66px;
-  padding-top: 35px;
+  margin-bottom: 104px;
+  padding-top: 30px;
   text-align: center;
 }
 
 .video__title {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: $color-black;
   font-size: 18px;
 }
@@ -27,7 +27,7 @@
 @media (min-width: 768px) {
   .video {
     margin: 0;
-    padding: 60px 60px 40px;
+    padding: 57px 60px 40px;
   }
 
   .video__title {
@@ -41,6 +41,12 @@
   }
 
   .video__player {
-    margin-top: 67px;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video {
+    padding: 57px 60px 85px;
   }
 }
