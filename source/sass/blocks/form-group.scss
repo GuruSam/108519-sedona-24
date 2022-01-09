@@ -1,11 +1,13 @@
 .form-group {
+  display: flex;
+  flex-direction: column;
   margin-inline-start: 0;
   margin-inline-end: 0;
   padding-block-start: 0;
   padding-block-end: 0;
   padding-inline-start: 0;
   padding-inline-end: 0;
-  padding: 20px 20px 25px;
+  padding: 20px 20px;
   line-height: 26px;
   border: none;
   min-inline-size: min-content;
@@ -15,19 +17,22 @@
   &--sights,
   &--review {
     grid-column: 1 / -1;
-  }
 
-  &--contacts,
-  &--review {
     .form-group__title {
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
   }
 
-  &--opinion {
+  &--opinion,
+  &--personal {
     .form-group__title {
       margin-bottom: 23px;
     }
+  }
+
+  &--contacts,
+  &--opinion {
+    padding-bottom: 25px;
   }
 
   &--sights {
@@ -36,8 +41,9 @@
 }
 
 .form-group__title {
+  float: left;
   width: 100%;
-  margin-bottom: 20px;
+  margin: 0;
   font-size: 18px;
   font-weight: 700;
 }
@@ -151,7 +157,8 @@
     text-align: left;
 
     &--bordered {
-      display: flex;
+      display: grid;
+      grid-template-columns: 1fr 400px 1fr;
       align-items: center;
       text-align: center;
 
@@ -161,14 +168,9 @@
         display: block;
         flex: 1;
         width: 100%;
+        min-width: 123px;
         height: 1px;
         background-color: #dbdbdb;
-      }
-
-      legend {
-        width: 400px;
-        padding-left: 60px;
-        padding-right: 60px;
       }
     }
   }
