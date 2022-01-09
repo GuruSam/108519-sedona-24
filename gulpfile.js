@@ -28,6 +28,19 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+const buildStyles = () => {
+  return gulp.src('source/sass/style.scss')
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(cleanCSS())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
+}
+
 // Copy untouched source files
 
 const copySource = () => {
@@ -48,7 +61,8 @@ const scripts = () => {
     .pipe(terser({
       ext: {
         min: '.min.js'
-      }
+      },
+      noSource: true
     }))
     .pipe(gulp.dest('build/js'));
 }
@@ -156,7 +170,7 @@ export default gulp.series(
 export const build = gulp.series(
   cleanBuild,
   gulp.parallel(
-    styles,
+    buildStyles,
     html,
     scripts,
     copySource,
