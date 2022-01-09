@@ -44,6 +44,7 @@
   float: left;
   width: 100%;
   margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 700;
 }
@@ -196,7 +197,7 @@
   .form-group {
     &--contacts {
       .form-group__title {
-        margin-bottom: 77px;
+        margin-bottom: 72px;
       }
     }
 
@@ -210,7 +211,7 @@
 
     &--sights {
       .form-group__title {
-        margin-bottom: 39px;
+        margin-bottom: 44px;
       }
     }
 
