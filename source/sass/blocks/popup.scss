@@ -3,6 +3,7 @@
   top: 116px;
   left: 0;
   margin: 20px 0;
+  width: 100%;
   min-height: 280px;
   text-align: center;
   background-color: $color-white;
@@ -53,7 +54,7 @@
   .popup {
     &--failure {
       width: 400px;
-      margin: 0 auto;
+      left: calc(50% - 200px);
 
       .popup__title {
         line-height: 40px;
@@ -71,7 +72,7 @@
 
     &--success {
       width: 640px;
-      margin: 0 auto;
+      left: calc(50% - 320px);
 
       .popup__container {
         padding: 50px 60px;
