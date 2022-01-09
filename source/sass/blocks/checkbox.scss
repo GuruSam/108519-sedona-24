@@ -32,6 +32,7 @@
   &::after {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
     align-self: flex-start;
     width: 56px;
