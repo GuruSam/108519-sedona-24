@@ -3,8 +3,13 @@
     opacity: 1;
   }
 
-  &:checked:active + .checkbox__label::after {
+  &:checked:active + .checkbox__label::after,
+  &:disabled + .checkbox__label::after {
     opacity: 0.3;
+  }
+
+  &:disabled + .checkbox__label::before {
+    background-color: #d5d5d5;
   }
 }
 

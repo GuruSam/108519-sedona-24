@@ -7,8 +7,13 @@
     opacity: 1;
   }
 
-  &:checked:active + .radio-button__label::after {
+  &:checked:active + .radio-button__label::after,
+  &:disabled + .radio-button__label::after {
     background-color: rgba($color: $color-primary, $alpha: 0.3);
+  }
+
+  &:disabled + .radio-button__label::before {
+    background-color: #d5d5d5;
   }
 }
 
