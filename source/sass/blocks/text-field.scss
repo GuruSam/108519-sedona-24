@@ -72,13 +72,13 @@
 .text-field__input {
   width: 100%;
   height: 58px;
-  padding: 0 22px;
+  padding: 0 20px;
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   line-height: 26px;
   background-color: $color-grey-background;
-  border: none;
+  border: 4px solid $color-grey-background;
   box-sizing: border-box;
 
   &:hover {
@@ -86,7 +86,6 @@
   }
 
   &:focus {
-    padding: 0 16px;
     background-color: $color-white;
     border: 4px solid $color-border-grey;
     outline: none;
