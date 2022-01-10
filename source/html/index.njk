@@ -1,0 +1,96 @@
+{% set title = 'HTML Academy: Седона' %}
+{% set current = 'index' %}
+{% set heading = 'Седона — общая информация' %}
+{% extends "layouts/layout.njk" %}
+{% block content %}
+{% include 'templates/intro-main.njk' %}
+<section class="reasons">
+  <header class="reasons__header">
+    <h2 class="reasons__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+    <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+  </header>
+
+  <ol class="reasons__list">
+    <li class="reasons__item reasons__item--main reasons-item reasons-item--main">
+      <div class="reasons-item__text-container">
+        <h3 class="reasons-item__title">Настоящий городок</h3>
+        <p class="reasons-item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+      </div>
+
+      <div class="reasons-item__image-container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/sedona/photo-city-desktop.webp 1x, img/sedona/photo-city-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona/photo-city.webp 1x, img/sedona/photo-city@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/sedona/photo-city-desktop.jpg 1x, img/sedona/photo-city-desktop@2x.jpg 2x">
+          <img src="img/sedona/photo-city.jpg" width="320" height="260" alt="Фото города.">
+        </picture>
+      </div>
+
+      <ul class="features">
+        <li class="features__item features__item--house">
+          <h3 class="features__title">Жилье</h3>
+          <p class="features__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+
+        <li class="features__item features__item--gift">
+          <h3 class="features__title">Сувениры</h3>
+          <p class="features__description">Не только китайского, но и местного производства!</p>
+        </li>
+
+        <li class="features__item features__item--burger">
+          <h3 class="features__title">Еда</h3>
+          <p class="features__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        </li>
+      </ul>
+    </li>
+
+    <li class="reasons__item reasons__item--main reasons-item reasons-item--main">
+      <div class="reasons-item__text-container">
+        <h3 class="reasons-item__title">Там есть мост дьявола</h3>
+        <p class="reasons-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+      </div>
+
+      <div class="reasons-item__image-container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/sedona/photo-bridge-desktop.webp 1x, img/sedona/photo-bridge-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/sedona/photo-bridge.webp 1x, img/sedona/photo-bridge@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/sedona/photo-bridge-desktop.jpg 1x, img/sedona/photo-bridge-desktop@2x.jpg 2x">
+          <img src="img/sedona/photo-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
+        </picture>
+      </div>
+    </li>
+
+    <li class="reasons__item reasons__item--submain reasons-item reasons-item--submain">
+      <div class="reasons-item__text-container">
+        <h3 class="reasons-item__title">Небольшая площадь</h3>
+        <p class="reasons-item__description">Все интересные места находятся очень близко</p>
+      </div>
+    </li>
+
+    <li class="reasons__item reasons__item--submain reasons-item reasons-item--submain">
+      <div class="reasons-item__text-container">
+        <h3 class="reasons-item__title">Красивая дорога</h3>
+        <p class="reasons-item__description reasons-item__description--narrow">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+      </div>
+    </li>
+
+    <li class="reasons__item reasons__item--submain reasons-item reasons-item--submain">
+      <div class="reasons-item__text-container">
+        <h3 class="reasons-item__title">Мало туристов</h3>
+        <p class="reasons-item__description">Большинство едет в гранд каньон и толпится там</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<section class="search-hotel">
+  <div class="search-hotel__container">
+    <h2 class="search-hotel__title">Заинтересовались?</h2>
+    <p class="search-hotel__info">Укажите предполагаемые даты поездки,<br>
+      и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <a class="search-hotel__link button" href="#">Найти гостиницу</a>
+  </div>
+
+  <iframe class="search-hotel__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18519.1805048471!2d-111.78764540863092!3d34.86227764666563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1639491135572!5m2!1sen!2sru" allowfullscreen="" loading="lazy"></iframe>
+</section>
+{% endblock content %}

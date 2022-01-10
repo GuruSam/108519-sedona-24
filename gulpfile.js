@@ -12,6 +12,7 @@ import squoosh from 'gulp-libsquoosh';
 import cleanCSS from 'gulp-clean-css';
 import htmlmin from 'gulp-htmlmin';
 import terser from 'gulp-minify';
+import nunjucks from 'gulp-nunjucks';
 
 // Styles
 
@@ -70,7 +71,8 @@ const scripts = () => {
 // HTML
 
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp.src('source/html/*.njk')
+    .pipe(nunjucks.compile())
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
@@ -146,7 +148,7 @@ const cleanBuild = () => {
 
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/html/*.njk', gulp.series(html, reload));
   gulp.watch('source/js/*.js', gulp.series(scripts));
 }
 
