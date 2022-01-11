@@ -16,6 +16,7 @@
   width: 46px;
   height: 48px;
   padding: 0;
+  background-color: $color-blue;
 
   &::before {
     content: "";
@@ -37,6 +38,10 @@
 
   &--youtube::before {
     background-image: url("../img/sprite.svg#icon-youtube");
+  }
+
+  &:hover {
+    background-color: $color-blue-darker;
   }
 
   &:active::before {
