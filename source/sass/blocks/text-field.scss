@@ -53,20 +53,6 @@
 
 .text-field__label {
   margin-right: 15px;
-
-  &--short {
-    display: none;
-  }
-
-  @media (min-width: 1200px) {
-    &--short {
-      display: block;
-    }
-
-    &--full {
-      display: none;
-    }
-  }
 }
 
 .text-field__input {
@@ -98,6 +84,17 @@
   }
 }
 
+@media (min-width: 768px) {
+  .text-field {
+    &--phone,
+    &--email {
+      .text-field__label {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   .text-field {
     &--phone,
@@ -111,5 +108,9 @@
         text-align: left;
       }
     }
+  }
+
+  .text-field__full-word {
+    display: none;
   }
 }
