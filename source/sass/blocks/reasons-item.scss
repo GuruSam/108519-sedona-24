@@ -75,6 +75,10 @@
   margin: 0;
   line-height: 21px;
 
+  br {
+    display: none;
+  }
+
   &--narrow {
     padding: 0 15px;
   }
@@ -124,7 +128,7 @@
   }
 
   .reasons-item__title {
-    width: 151px;
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 23px;
     font-size: 21px;
@@ -162,6 +166,16 @@
   .reasons-item__image-container {
     img {
       width: 100%;
+    }
+  }
+
+  .reasons-item__description {
+    br {
+      display: block;
+    }
+
+    &--narrow {
+      padding: 0 25px;
     }
   }
 }
