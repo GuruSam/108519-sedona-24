@@ -89,6 +89,11 @@
 }
 
 @media (min-width: 768px) {
+  .player video {
+    height: 500px;
+    object-fit: cover;
+  }
+
   .player__controls {
     bottom: 0;
     margin: 0;
@@ -102,7 +107,7 @@
     position: static;
     margin: 0;
     padding: 0 5px;
-    margin-right: 30px;
+    margin-right: 45px;
     background: none;
   }
 
@@ -122,7 +127,11 @@
     }
 
     &--caption {
-      margin-right: 25px;
+      margin-right: 27px;
+    }
+
+    &--fullscreen {
+      margin-right: 8px;
     }
   }
 }

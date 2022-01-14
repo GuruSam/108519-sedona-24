@@ -1,15 +1,27 @@
 .popup {
-  display: none;
+  position: fixed;
+  top: 116px;
+  left: 0;
   margin: 20px 0;
+  width: 100%;
+  min-height: 280px;
+  text-align: center;
+  background-color: $color-white;
   box-shadow: 0 7px 15px rgba($color: #000101, $alpha: 0.15);
 
-  &--active {
-    display: block;
+  &--hidden {
+    display: none;
+  }
+
+  &--failure {
+    .popup__button {
+      margin-top: 22px;
+    }
   }
 }
 
 .popup__container {
-  padding: 35px 20px;
+  padding: 40px 42px;
 }
 
 .popup__text {
@@ -19,11 +31,14 @@
 .popup__button {
   min-width: 180px;
   max-width: 458px;
+  font-size: 18px;
 }
 
 .popup__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
 }
 
 .popup__footer {
@@ -39,7 +54,7 @@
   .popup {
     &--failure {
       width: 400px;
-      margin: 0 auto;
+      left: calc(50% - 200px);
 
       .popup__title {
         line-height: 40px;
@@ -57,7 +72,7 @@
 
     &--success {
       width: 640px;
-      margin: 0 auto;
+      left: calc(50% - 320px);
 
       .popup__container {
         padding: 50px 60px;

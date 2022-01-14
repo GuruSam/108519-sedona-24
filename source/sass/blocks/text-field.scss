@@ -14,7 +14,7 @@
     }
 
     .text-field__input {
-      padding-right: 58px;
+      padding-right: 70px;
     }
   }
 
@@ -53,20 +53,6 @@
 
 .text-field__label {
   margin-right: 15px;
-
-  &--short {
-    display: none;
-  }
-
-  @media (min-width: 1200px) {
-    &--short {
-      display: block;
-    }
-
-    &--full {
-      display: none;
-    }
-  }
 }
 
 .text-field__input {
@@ -76,16 +62,17 @@
   font-size: 18px;
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
+  line-height: 26px;
   background-color: $color-grey-background;
-  border: none;
+  border: 4px solid $color-grey-background;
   box-sizing: border-box;
 
   &:hover {
     background-color: $color-border-grey;
+    border: 4px solid $color-border-grey;
   }
 
   &:focus {
-    padding: 0 16px;
     background-color: $color-white;
     border: 4px solid $color-border-grey;
     outline: none;
@@ -94,6 +81,17 @@
   &::placeholder {
     opacity: 1;
     color: $color-black;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-field {
+    &--phone,
+    &--email {
+      .text-field__label {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -110,5 +108,9 @@
         text-align: left;
       }
     }
+  }
+
+  .text-field__full-word {
+    display: none;
   }
 }

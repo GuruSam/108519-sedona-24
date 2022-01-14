@@ -4,25 +4,23 @@
 
 .reasons-item--main {
   color: $color-white;
-  background-color: $color-blue;
 
   .reasons-item__title {
     color: $color-white;
   }
 
   .reasons-item__text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 40px 20px;
     background-color: $color-blue;
   }
 
-  &:first-child .reasons-item__text-container {
-    padding-top: 65px;
-    background-image: url("../img/intro-triangle-white.svg");
-    background-position: center top;
-    background-repeat: no-repeat;
+  &:first-child {
+    .reasons-item__text-container {
+      padding-top: 75px;
+      background-image: url("../img/intro-triangle-white.svg");
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
   }
 }
 
@@ -58,13 +56,13 @@
 
 .reasons-item__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 18px;
   line-height: 26px;
 
   &::after {
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     content: "— №" counter(reason) " —";
     font-size: 14px;
     font-weight: 400;
@@ -76,6 +74,14 @@
 .reasons-item__description {
   margin: 0;
   line-height: 21px;
+
+  br {
+    display: none;
+  }
+
+  &--narrow {
+    padding: 0 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -86,6 +92,10 @@
       grid-template-columns: inherit;
 
       .reasons-item__text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         padding: 40px 30px;
       }
 
@@ -103,12 +113,8 @@
     &--submain {
       padding: 0;
 
-      .reasons-item__title {
-        word-spacing: 260px;
-      }
-
       .reasons-item__text-container {
-        padding: 50px 30px;
+        padding: 40px 40px 40px;
       }
 
       &:not(:last-child) .reasons-item__text-container {
@@ -122,7 +128,14 @@
   }
 
   .reasons-item__title {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 23px;
     font-size: 21px;
+
+    &::after {
+      margin-top: 14px;
+    }
   }
 
   .reasons-item__image-container {
@@ -133,18 +146,36 @@
 
 @media (min-width: 1200px) {
   .reasons-item {
-    &--main .reasons-item__text-container {
-      padding: 40px 60px;
+    &--main {
+      &:first-child .reasons-item__text-container {
+        padding-top: 30px;
+      }
+
+      .reasons-item__text-container {
+        padding: 40px 60px;
+      }
     }
 
-    &--submain .reasons-item__text-container {
-      padding: 50px;
+    &--submain {
+      .reasons-item__text-container {
+        padding: 43px 40px 40px;
+      }
     }
   }
 
   .reasons-item__image-container {
     img {
       width: 100%;
+    }
+  }
+
+  .reasons-item__description {
+    br {
+      display: block;
+    }
+
+    &--narrow {
+      padding: 0 25px;
     }
   }
 }

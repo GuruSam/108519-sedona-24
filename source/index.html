@@ -9,6 +9,12 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+
+    <link rel="preload" href="css/style.min.css" as="style" crossorigin>
+    <link rel="preload" href="js/index.min.js" as="script">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__wrapper">
@@ -84,7 +90,7 @@
 
               <li class="features__item features__item--gift">
                 <h3 class="features__title">Сувениры</h3>
-                <p class="features__description">Не только китайского, но и местного производства!</p>
+                <p class="features__description">Не только китайского,<br>&nbsp;но и местного производства!</p>
               </li>
 
               <li class="features__item features__item--burger">
@@ -97,7 +103,7 @@
           <li class="reasons__item reasons__item--main reasons-item reasons-item--main">
             <div class="reasons-item__text-container">
               <h3 class="reasons-item__title">Там есть мост дьявола</h3>
-              <p class="reasons-item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reasons-item__description">Да, по нему можно пройти!<br>&nbsp;Если вы осмелитесь, конечно</p>
             </div>
 
             <div class="reasons-item__image-container">
@@ -120,7 +126,7 @@
           <li class="reasons__item reasons__item--submain reasons-item reasons-item--submain">
             <div class="reasons-item__text-container">
               <h3 class="reasons-item__title">Красивая дорога</h3>
-              <p class="reasons-item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="reasons-item__description reasons-item__description--narrow">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
 
@@ -136,7 +142,7 @@
       <section class="search-hotel">
         <div class="search-hotel__container">
           <h2 class="search-hotel__title">Заинтересовались?</h2>
-          <p class="search-hotel__info">Укажите предполагаемые даты поездки,
+          <p class="search-hotel__info">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="search-hotel__link button" href="#">Найти гостиницу</a>
         </div>
@@ -151,17 +157,17 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter button" href="https://vk.com/htmlacademy" rel="noopener nofollow" target="_blank">
+            <a class="social__link social__link--twitter" href="https://vk.com/htmlacademy" rel="noopener nofollow" target="_blank">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook button" href="https://www.facebook.com/htmlacademy" rel="noopener nofollow" target="_blank">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" rel="noopener nofollow" target="_blank">
               <span class="visually-hidden">Мы в Фейсбуке</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube button" href="https://www.instagram.com/htmlacademy" rel="noopener nofollow" target="_blank">
+            <a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" rel="noopener nofollow" target="_blank">
               <span class="visually-hidden">Мы в Инстаграме</span>
             </a>
           </li>
@@ -172,13 +178,13 @@
         Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" rel="noopener nofollow" target="_blank">
           <svg width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <use href="img/sprite.svg#htmlacademy" width="27" height="35">
+            <use href="img/sprite.svg#htmlacademy" width="27" height="35"/>
           </svg>
           <span class="visually-hidden">Сайт HTML Academy</span>
         </a>
       </div>
     </footer>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>

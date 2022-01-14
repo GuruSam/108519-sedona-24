@@ -22,7 +22,7 @@
   }
 
   &--house::before {
-    margin-top: -10px;
+    margin-top: -12px;
     background-image: url("../img/sprite.svg#icon-house");
   }
 
@@ -32,7 +32,7 @@
   }
 
   &--burger::before {
-    margin-top: -9px;
+    margin-top: -8px;
     background-image: url("../img/sprite.svg#icon-burger");
   }
 }
@@ -40,7 +40,7 @@
 .features__title {
   margin: 0;
   margin-left: 50px;
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
@@ -51,6 +51,10 @@
   margin-left: 50px;
   line-height: 21px;
   color: $color-primary;
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -64,27 +68,35 @@
 
   .features__title {
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     font-size: 21px;
   }
 
   .features__item {
-    padding: 55px 25px;
+    padding: 55px 30px 60px;
 
     &:not(:last-child) {
       margin-bottom: 0;
     }
 
-    &::before {
-      position: static;
-      display: block;
-      margin: 0 auto 25px;
-      width: 76px;
-      height: 76px;
+    &--house {
+      padding: 55px 40px 60px;
+    }
+
+    &--burger {
+      padding: 55px 50px 60px;
     }
 
     &--gift {
       order: 3;
+    }
+
+    &::before {
+      position: static;
+      display: block;
+      margin: 0 auto 27px;
+      width: 76px;
+      height: 76px;
     }
   }
 
@@ -96,7 +108,13 @@
 @media (min-width: 1200px) {
   .features__item {
     width: 300px;
-    padding: 65px 0;
+    padding: 55px 0 80px;
     margin: 0 auto;
+  }
+
+  .features__description {
+    br {
+      display: block;
+    }
   }
 }

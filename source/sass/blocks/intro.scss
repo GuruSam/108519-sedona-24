@@ -1,6 +1,5 @@
 .intro {
   display: flex;
-  align-items: center;
   justify-content: center;
   background-image: url("../img/intro-triangle.svg"), url("../img/bg-mobile.jpg");
   background-position: center bottom;
@@ -8,11 +7,20 @@
   background-color: $color-grey;
 
   &--main {
-    min-height: 390px;
+    min-height: 389px;
+
+    picture {
+      margin-top: 90px;
+      height: 214px;
+    }
   }
 
   &--simple {
     min-height: 160px;
+
+    picture {
+      margin-top: 52px;
+    }
   }
 
   @media (min-resolution: 2dppx) {
@@ -28,9 +36,14 @@
     &--main {
       min-height: 518px;
 
-      img {
+      img,
+      picture {
         width: 461px;
         height: 350px;
+      }
+
+      picture {
+        margin-top: 78px;
       }
     }
 
@@ -42,11 +55,27 @@
         width: 457px;
         height: 78px;
       }
+
+      picture {
+        margin-top: 95px;
+      }
     }
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro-triangle.svg"), url("../img/bg-desktop@2x.jpg");
       background-size: auto, 1200px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    &--simple {
+      min-height: 300px;
+
+      picture {
+        margin-top: 102px;
+      }
     }
   }
 }

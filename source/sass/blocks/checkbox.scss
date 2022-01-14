@@ -1,10 +1,19 @@
+.checkbox {
+  display: block;
+}
+
 .checkbox__input {
   &:checked + .checkbox__label::after {
     opacity: 1;
   }
 
-  &:checked:active + .checkbox__label::after {
+  &:checked:active + .checkbox__label::after,
+  &:disabled + .checkbox__label::after {
     opacity: 0.3;
+  }
+
+  &:disabled + .checkbox__label::before {
+    background-color: #d5d5d5;
   }
 }
 
@@ -24,7 +33,7 @@
     align-self: flex-start;
     width: 56px;
     height: 56px;
-    margin-right: 20px;
+    margin-right: 23px;
     background-color: $color-grey-background;
     border-radius: 5px;
   }
@@ -32,6 +41,7 @@
   &::after {
     content: "";
     position: absolute;
+    top: 0;
     left: 0;
     align-self: flex-start;
     width: 56px;

@@ -10,11 +10,26 @@ import svgSprite from 'gulp-svg-sprite';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import cleanCSS from 'gulp-clean-css';
+import htmlmin from 'gulp-htmlmin';
+import terser from 'gulp-minify';
 
 // Styles
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(cleanCSS())
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(browser.stream());
+}
+
+const buildStyles = () => {
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
@@ -43,6 +58,12 @@ const copySource = () => {
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
+    .pipe(terser({
+      ext: {
+        min: '.min.js'
+      },
+      noSource: true
+    }))
     .pipe(gulp.dest('build/js'));
 }
 
@@ -50,6 +71,7 @@ const scripts = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 }
 
@@ -148,7 +170,7 @@ export default gulp.series(
 export const build = gulp.series(
   cleanBuild,
   gulp.parallel(
-    styles,
+    buildStyles,
     html,
     scripts,
     copySource,
