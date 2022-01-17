@@ -15,6 +15,10 @@
   &:disabled + .checkbox__label::before {
     background-color: #d5d5d5;
   }
+
+  &:focus + .checkbox__label {
+    outline: 2px solid $color-black;
+  }
 }
 
 .checkbox__label {

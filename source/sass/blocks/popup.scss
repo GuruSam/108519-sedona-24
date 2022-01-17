@@ -17,6 +17,10 @@
     .popup__button {
       margin-top: 22px;
     }
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -61,12 +65,16 @@
       }
 
       .popup__container {
-        padding: 50px 60px;
+        padding: 62px 60px 50px;
       }
 
       .popup__button {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 35px;
+      }
+
+      br {
+        display: block;
       }
     }
 
@@ -74,8 +82,12 @@
       width: 640px;
       left: calc(50% - 320px);
 
+      .popup__title {
+        margin-bottom: 30px;
+      }
+
       .popup__container {
-        padding: 50px 60px;
+        padding: 50px 60px 43px;
       }
 
       .popup__footer {
@@ -86,6 +98,10 @@
 
   .popup__title {
     font-size: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+  }
+
+  .popup__button {
+    font-size: 21px;
   }
 }

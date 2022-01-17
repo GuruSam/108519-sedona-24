@@ -68,6 +68,10 @@
     opacity: 1;
     color: $color-black;
   }
+
+  &:focus {
+    outline: 2px solid $color-black;
+  }
 }
 
 .form-group__text-field {

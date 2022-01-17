@@ -71,7 +71,7 @@ const scripts = () => {
 
 const html = () => {
   return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin())
     .pipe(gulp.dest('build'));
 }
 

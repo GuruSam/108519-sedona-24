@@ -84,17 +84,6 @@
   }
 }
 
-@media (min-width: 768px) {
-  .text-field {
-    &--phone,
-    &--email {
-      .text-field__label {
-        margin-bottom: 0;
-      }
-    }
-  }
-}
-
 @media (min-width: 1200px) {
   .text-field {
     &--phone,
@@ -105,6 +94,7 @@
       .text-field__label {
         margin-left: 0;
         margin-right: 15px;
+        margin-bottom: 0;
         text-align: left;
       }
     }

@@ -15,6 +15,10 @@
   &:disabled + .radio-button__label::before {
     background-color: #d5d5d5;
   }
+
+  &:focus + .radio-button__label {
+    outline: 2px solid $color-black;
+  }
 }
 
 .radio-button__label {
